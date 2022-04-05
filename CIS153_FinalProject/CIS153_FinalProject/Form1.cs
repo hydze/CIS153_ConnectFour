@@ -16,5 +16,12 @@ namespace CIS153_FinalProject
         {
             InitializeComponent();
         }
+
+
+        //EXIT BUTTON - FINISHED
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
