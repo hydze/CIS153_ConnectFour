@@ -19,7 +19,7 @@ namespace CIS153_FinalProject
         {
             InitializeComponent();
 
-            readStats();
+            readStats(); //read file when program starts
             
 
         }
@@ -35,6 +35,8 @@ namespace CIS153_FinalProject
         private void btn_statistics_Click(object sender, EventArgs e)
         {
             loadStatsForm();
+            
+            //testGOForm(); used to view game over form and test stats functionality there
         }
 
         private void btn_single_Click(object sender, EventArgs e)
@@ -147,5 +149,11 @@ namespace CIS153_FinalProject
         }
 
 
+        public void testGOForm()
+        {
+            gameOver formToLoad = new gameOver(this);
+            formToLoad.Show(); //show statsForm
+            this.Hide();
+        }
     }
 }
