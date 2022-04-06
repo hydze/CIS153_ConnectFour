@@ -57,6 +57,7 @@ namespace CIS153_FinalProject
             this.btn_double.TabIndex = 1;
             this.btn_double.Text = "Two Player";
             this.btn_double.UseVisualStyleBackColor = true;
+            this.btn_double.Click += new System.EventHandler(this.btn_double_Click);
             // 
             // btn_statistics
             // 

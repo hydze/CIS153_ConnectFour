@@ -44,6 +44,11 @@ namespace CIS153_FinalProject
             startSinglePlayer();
         }
 
+        private void btn_double_Click(object sender, EventArgs e)
+        {
+            startTwoPlayer();
+        }
+
 
         public void loadStatsForm()
         {
@@ -56,6 +61,13 @@ namespace CIS153_FinalProject
         {
             singlePlayer formToLoad = new singlePlayer(this);
             formToLoad.Show();
+            this.Hide();
+        }
+
+        public void startTwoPlayer()
+        {
+            twoPlayer formToLoad = new twoPlayer(this);
+            formToLoad.Show(); //show statsForm
             this.Hide();
         }
 
@@ -155,5 +167,7 @@ namespace CIS153_FinalProject
             formToLoad.Show(); //show statsForm
             this.Hide();
         }
+
+
     }
 }
