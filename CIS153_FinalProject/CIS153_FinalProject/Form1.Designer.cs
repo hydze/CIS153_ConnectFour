@@ -46,6 +46,7 @@ namespace CIS153_FinalProject
             this.btn_single.TabIndex = 0;
             this.btn_single.Text = "Single Player";
             this.btn_single.UseVisualStyleBackColor = true;
+            this.btn_single.Click += new System.EventHandler(this.btn_single_Click);
             // 
             // btn_double
             // 
@@ -66,6 +67,7 @@ namespace CIS153_FinalProject
             this.btn_statistics.TabIndex = 2;
             this.btn_statistics.Text = "Statistics";
             this.btn_statistics.UseVisualStyleBackColor = true;
+            this.btn_statistics.Click += new System.EventHandler(this.btn_statistics_Click);
             // 
             // btn_exit
             // 

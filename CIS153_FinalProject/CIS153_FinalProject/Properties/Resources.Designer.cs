@@ -69,5 +69,14 @@ namespace CIS153_FinalProject.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0,0,0,0,.
+        /// </summary>
+        internal static string stats {
+            get {
+                return ResourceManager.GetString("stats", resourceCulture);
+            }
+        }
     }
 }
