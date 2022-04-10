@@ -121,7 +121,13 @@
   <data name="connect4 logo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\connect4 logo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="377-3777584_connectbg-size-connect-4-board-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\377-3777584_connectbg-size-connect-4-board-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="stats" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stats.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="spooky-ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spooky-ghost.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

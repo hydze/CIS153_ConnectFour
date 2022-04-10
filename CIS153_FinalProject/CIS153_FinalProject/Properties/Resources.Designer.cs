@@ -63,6 +63,16 @@ namespace CIS153_FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _377_3777584_connectbg_size_connect_4_board_transparent {
+            get {
+                object obj = ResourceManager.GetObject("377-3777584_connectbg-size-connect-4-board-transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap connect4_logo__1_ {
             get {
                 object obj = ResourceManager.GetObject("connect4 logo (1)", resourceCulture);
@@ -71,7 +81,17 @@ namespace CIS153_FinalProject.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0,0,0,0,.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spooky_ghost {
+            get {
+                object obj = ResourceManager.GetObject("spooky-ghost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3,0,0,0,.
         /// </summary>
         internal static string stats {
             get {

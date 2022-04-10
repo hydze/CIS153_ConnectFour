@@ -126,5 +126,11 @@
   <ItemGroup>
     <None Include="Resources\stats.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\377-3777584_connectbg-size-connect-4-board-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spooky-ghost.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
