@@ -312,7 +312,7 @@ namespace CIS153_FinalProject
             this.Controls.Add(this.btn_review);
             this.Name = "gameOver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "gameOver";
+            this.Text = "Game Over";
             this.ResumeLayout(false);
             this.PerformLayout();
 

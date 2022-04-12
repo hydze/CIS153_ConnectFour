@@ -273,7 +273,7 @@ namespace CIS153_FinalProject
             this.Controls.Add(this.btn_exit);
             this.Name = "statsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Connnect 4 Statistics";
+            this.Text = "Statistics";
             this.ResumeLayout(false);
             this.PerformLayout();
 
