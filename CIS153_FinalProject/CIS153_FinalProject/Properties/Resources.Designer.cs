@@ -83,6 +83,16 @@ namespace CIS153_FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap red_token {
+            get {
+                object obj = ResourceManager.GetObject("red_token", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap spooky_ghost {
             get {
                 object obj = ResourceManager.GetObject("spooky-ghost", resourceCulture);
@@ -96,6 +106,16 @@ namespace CIS153_FinalProject.Properties {
         internal static string stats {
             get {
                 return ResourceManager.GetString("stats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yellow_token {
+            get {
+                object obj = ResourceManager.GetObject("yellow_token", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

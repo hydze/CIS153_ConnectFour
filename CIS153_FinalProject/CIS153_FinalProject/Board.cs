@@ -52,6 +52,11 @@ namespace CIS153_FinalProject
             return checkWinHorizontal() || checkWinVertical() || checkWinDiagonal();
         }
 
+        public Color[,] getGameBoard()
+        {
+            return gameBoard;
+        }
+
         public bool checkWinHorizontal()
         {
             for (int i = 0; i < row; i++)
@@ -116,12 +121,8 @@ namespace CIS153_FinalProject
             return gameBoard[0, c] == Color.NONE;
         }
 
-        public bool insertCoin(int c)
+        public int insertCoin(int c)
         {
-            if (!canPlaceCoin(c))
-            {
-                return false;
-            }
 
             for (int i = row - 1; i > 0; i--)
             {
@@ -130,11 +131,11 @@ namespace CIS153_FinalProject
                     gameBoard[i, c] = currentPlayer;
                     //switches current player color
                     currentPlayer = currentPlayer == Color.RED ? Color.YELLOW : Color.RED;
-                    return true;
+                    return i;
                 }
             }
 
-            return false;
+            return 100;
         }
 
         public bool isFinished()

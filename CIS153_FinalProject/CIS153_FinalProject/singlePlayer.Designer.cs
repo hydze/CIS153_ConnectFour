@@ -62,7 +62,7 @@ namespace CIS153_FinalProject
             this.ptr_board1.BackColor = System.Drawing.Color.White;
             this.ptr_board1.Image = global::CIS153_FinalProject.Properties.Resources._377_3777584_connectbg_size_connect_4_board_transparent;
             this.ptr_board1.Location = new System.Drawing.Point(37, 20);
-            this.ptr_board1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptr_board1.Margin = new System.Windows.Forms.Padding(2);
             this.ptr_board1.Name = "ptr_board1";
             this.ptr_board1.Size = new System.Drawing.Size(491, 423);
             this.ptr_board1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
