@@ -132,8 +132,5 @@
   <ItemGroup>
     <None Include="Resources\spooky-ghost.gif" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\red-token.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
