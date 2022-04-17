@@ -125,7 +125,7 @@ namespace CIS153_FinalProject
         public int insertCoin(int c)
         {
 
-            for (int i = row - 1; i > 0; i--)
+            for (int i = row - 1; i >= 0; i--) // changed from > to >= to get the top token number correct for placement
             {
                 if(gameBoard[i, c] == Color.NONE)
                 {
@@ -138,7 +138,7 @@ namespace CIS153_FinalProject
                 }
             }
 
-            return 100;
+            return 0; //returning 100 here led to row being set to 5 - 100 or -95 crashing program, setting to 0 corrects math elsewhere 
         }
 
         public bool isFinished()

@@ -83,11 +83,11 @@ namespace CIS153_FinalProject
                     res += string.Join(" ", r);
                     res += "\n";
                 }
-
+                Console.WriteLine(row);
                 MessageBox.Show(res);
 
                 Color TokenColor = board.getLastPlayer();  //last player is REALLY current player before insertCoin changes player above
-                //Console.WriteLine(TokenColor);
+               
                 if (TokenColor == Color.RED)
                 {
                     var img = redCoins[imgPlace];
