@@ -81,6 +81,48 @@ namespace CIS153_FinalProject
             this.btn_drop5 = new System.Windows.Forms.Button();
             this.btn_drop4 = new System.Windows.Forms.Button();
             this.btn_drop7 = new System.Windows.Forms.Button();
+            this.yellow_1 = new System.Windows.Forms.PictureBox();
+            this.yellow_2 = new System.Windows.Forms.PictureBox();
+            this.yellow_3 = new System.Windows.Forms.PictureBox();
+            this.yellow_4 = new System.Windows.Forms.PictureBox();
+            this.yellow_5 = new System.Windows.Forms.PictureBox();
+            this.yellow_6 = new System.Windows.Forms.PictureBox();
+            this.yellow_7 = new System.Windows.Forms.PictureBox();
+            this.yellow_8 = new System.Windows.Forms.PictureBox();
+            this.yellow_9 = new System.Windows.Forms.PictureBox();
+            this.yellow_10 = new System.Windows.Forms.PictureBox();
+            this.yellow_11 = new System.Windows.Forms.PictureBox();
+            this.yellow_12 = new System.Windows.Forms.PictureBox();
+            this.yellow_13 = new System.Windows.Forms.PictureBox();
+            this.yellow_14 = new System.Windows.Forms.PictureBox();
+            this.yellow_15 = new System.Windows.Forms.PictureBox();
+            this.yellow_16 = new System.Windows.Forms.PictureBox();
+            this.yellow_17 = new System.Windows.Forms.PictureBox();
+            this.yellow_18 = new System.Windows.Forms.PictureBox();
+            this.yellow_19 = new System.Windows.Forms.PictureBox();
+            this.yellow_20 = new System.Windows.Forms.PictureBox();
+            this.yellow_21 = new System.Windows.Forms.PictureBox();
+            this.yellow_28 = new System.Windows.Forms.PictureBox();
+            this.yellow_27 = new System.Windows.Forms.PictureBox();
+            this.yellow_26 = new System.Windows.Forms.PictureBox();
+            this.yellow_25 = new System.Windows.Forms.PictureBox();
+            this.yellow_24 = new System.Windows.Forms.PictureBox();
+            this.yellow_23 = new System.Windows.Forms.PictureBox();
+            this.yellow_22 = new System.Windows.Forms.PictureBox();
+            this.yellow_29 = new System.Windows.Forms.PictureBox();
+            this.yellow_30 = new System.Windows.Forms.PictureBox();
+            this.yellow_31 = new System.Windows.Forms.PictureBox();
+            this.yellow_32 = new System.Windows.Forms.PictureBox();
+            this.yellow_33 = new System.Windows.Forms.PictureBox();
+            this.yellow_34 = new System.Windows.Forms.PictureBox();
+            this.yellow_35 = new System.Windows.Forms.PictureBox();
+            this.yellow_36 = new System.Windows.Forms.PictureBox();
+            this.yellow_37 = new System.Windows.Forms.PictureBox();
+            this.yellow_38 = new System.Windows.Forms.PictureBox();
+            this.yellow_39 = new System.Windows.Forms.PictureBox();
+            this.yellow_40 = new System.Windows.Forms.PictureBox();
+            this.yellow_41 = new System.Windows.Forms.PictureBox();
+            this.yellow_42 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_8)).BeginInit();
@@ -124,6 +166,48 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.red_31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_exit
@@ -734,6 +818,510 @@ namespace CIS153_FinalProject
             this.btn_drop7.UseVisualStyleBackColor = true;
             this.btn_drop7.Click += new System.EventHandler(this.btn_drop7_Click);
             // 
+            // yellow_1
+            // 
+            this.yellow_1.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_1.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_1.Location = new System.Drawing.Point(37, 393);
+            this.yellow_1.Name = "yellow_1";
+            this.yellow_1.Size = new System.Drawing.Size(43, 39);
+            this.yellow_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_1.TabIndex = 101;
+            this.yellow_1.TabStop = false;
+            this.yellow_1.Visible = false;
+            // 
+            // yellow_2
+            // 
+            this.yellow_2.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_2.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_2.Location = new System.Drawing.Point(108, 393);
+            this.yellow_2.Name = "yellow_2";
+            this.yellow_2.Size = new System.Drawing.Size(43, 39);
+            this.yellow_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_2.TabIndex = 102;
+            this.yellow_2.TabStop = false;
+            this.yellow_2.Visible = false;
+            // 
+            // yellow_3
+            // 
+            this.yellow_3.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_3.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_3.Location = new System.Drawing.Point(176, 393);
+            this.yellow_3.Name = "yellow_3";
+            this.yellow_3.Size = new System.Drawing.Size(43, 39);
+            this.yellow_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_3.TabIndex = 103;
+            this.yellow_3.TabStop = false;
+            this.yellow_3.Visible = false;
+            // 
+            // yellow_4
+            // 
+            this.yellow_4.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_4.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_4.Location = new System.Drawing.Point(246, 393);
+            this.yellow_4.Name = "yellow_4";
+            this.yellow_4.Size = new System.Drawing.Size(43, 39);
+            this.yellow_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_4.TabIndex = 104;
+            this.yellow_4.TabStop = false;
+            this.yellow_4.Visible = false;
+            // 
+            // yellow_5
+            // 
+            this.yellow_5.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_5.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_5.Location = new System.Drawing.Point(317, 393);
+            this.yellow_5.Name = "yellow_5";
+            this.yellow_5.Size = new System.Drawing.Size(43, 39);
+            this.yellow_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_5.TabIndex = 105;
+            this.yellow_5.TabStop = false;
+            this.yellow_5.Visible = false;
+            // 
+            // yellow_6
+            // 
+            this.yellow_6.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_6.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_6.Location = new System.Drawing.Point(387, 393);
+            this.yellow_6.Name = "yellow_6";
+            this.yellow_6.Size = new System.Drawing.Size(43, 39);
+            this.yellow_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_6.TabIndex = 106;
+            this.yellow_6.TabStop = false;
+            this.yellow_6.Visible = false;
+            // 
+            // yellow_7
+            // 
+            this.yellow_7.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_7.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_7.Location = new System.Drawing.Point(457, 393);
+            this.yellow_7.Name = "yellow_7";
+            this.yellow_7.Size = new System.Drawing.Size(43, 39);
+            this.yellow_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_7.TabIndex = 107;
+            this.yellow_7.TabStop = false;
+            this.yellow_7.Visible = false;
+            // 
+            // yellow_8
+            // 
+            this.yellow_8.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_8.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_8.Location = new System.Drawing.Point(37, 322);
+            this.yellow_8.Name = "yellow_8";
+            this.yellow_8.Size = new System.Drawing.Size(43, 39);
+            this.yellow_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_8.TabIndex = 108;
+            this.yellow_8.TabStop = false;
+            this.yellow_8.Visible = false;
+            // 
+            // yellow_9
+            // 
+            this.yellow_9.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_9.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_9.Location = new System.Drawing.Point(108, 324);
+            this.yellow_9.Name = "yellow_9";
+            this.yellow_9.Size = new System.Drawing.Size(43, 39);
+            this.yellow_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_9.TabIndex = 109;
+            this.yellow_9.TabStop = false;
+            this.yellow_9.Visible = false;
+            // 
+            // yellow_10
+            // 
+            this.yellow_10.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_10.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_10.Location = new System.Drawing.Point(177, 322);
+            this.yellow_10.Name = "yellow_10";
+            this.yellow_10.Size = new System.Drawing.Size(43, 39);
+            this.yellow_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_10.TabIndex = 110;
+            this.yellow_10.TabStop = false;
+            this.yellow_10.Visible = false;
+            // 
+            // yellow_11
+            // 
+            this.yellow_11.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_11.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_11.Location = new System.Drawing.Point(246, 322);
+            this.yellow_11.Name = "yellow_11";
+            this.yellow_11.Size = new System.Drawing.Size(43, 39);
+            this.yellow_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_11.TabIndex = 111;
+            this.yellow_11.TabStop = false;
+            this.yellow_11.Visible = false;
+            // 
+            // yellow_12
+            // 
+            this.yellow_12.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_12.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_12.Location = new System.Drawing.Point(317, 324);
+            this.yellow_12.Name = "yellow_12";
+            this.yellow_12.Size = new System.Drawing.Size(43, 39);
+            this.yellow_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_12.TabIndex = 112;
+            this.yellow_12.TabStop = false;
+            this.yellow_12.Visible = false;
+            // 
+            // yellow_13
+            // 
+            this.yellow_13.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_13.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_13.Location = new System.Drawing.Point(387, 322);
+            this.yellow_13.Name = "yellow_13";
+            this.yellow_13.Size = new System.Drawing.Size(43, 39);
+            this.yellow_13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_13.TabIndex = 113;
+            this.yellow_13.TabStop = false;
+            this.yellow_13.Visible = false;
+            // 
+            // yellow_14
+            // 
+            this.yellow_14.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_14.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_14.Location = new System.Drawing.Point(457, 322);
+            this.yellow_14.Name = "yellow_14";
+            this.yellow_14.Size = new System.Drawing.Size(43, 39);
+            this.yellow_14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_14.TabIndex = 114;
+            this.yellow_14.TabStop = false;
+            this.yellow_14.Visible = false;
+            // 
+            // yellow_15
+            // 
+            this.yellow_15.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_15.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_15.Location = new System.Drawing.Point(37, 254);
+            this.yellow_15.Name = "yellow_15";
+            this.yellow_15.Size = new System.Drawing.Size(43, 39);
+            this.yellow_15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_15.TabIndex = 115;
+            this.yellow_15.TabStop = false;
+            this.yellow_15.Visible = false;
+            // 
+            // yellow_16
+            // 
+            this.yellow_16.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_16.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_16.Location = new System.Drawing.Point(108, 254);
+            this.yellow_16.Name = "yellow_16";
+            this.yellow_16.Size = new System.Drawing.Size(43, 39);
+            this.yellow_16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_16.TabIndex = 116;
+            this.yellow_16.TabStop = false;
+            this.yellow_16.Visible = false;
+            // 
+            // yellow_17
+            // 
+            this.yellow_17.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_17.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_17.Location = new System.Drawing.Point(177, 254);
+            this.yellow_17.Name = "yellow_17";
+            this.yellow_17.Size = new System.Drawing.Size(43, 39);
+            this.yellow_17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_17.TabIndex = 117;
+            this.yellow_17.TabStop = false;
+            this.yellow_17.Visible = false;
+            // 
+            // yellow_18
+            // 
+            this.yellow_18.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_18.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_18.Location = new System.Drawing.Point(246, 254);
+            this.yellow_18.Name = "yellow_18";
+            this.yellow_18.Size = new System.Drawing.Size(43, 39);
+            this.yellow_18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_18.TabIndex = 118;
+            this.yellow_18.TabStop = false;
+            this.yellow_18.Visible = false;
+            // 
+            // yellow_19
+            // 
+            this.yellow_19.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_19.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_19.Location = new System.Drawing.Point(317, 254);
+            this.yellow_19.Name = "yellow_19";
+            this.yellow_19.Size = new System.Drawing.Size(43, 39);
+            this.yellow_19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_19.TabIndex = 119;
+            this.yellow_19.TabStop = false;
+            this.yellow_19.Visible = false;
+            // 
+            // yellow_20
+            // 
+            this.yellow_20.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_20.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_20.Location = new System.Drawing.Point(387, 254);
+            this.yellow_20.Name = "yellow_20";
+            this.yellow_20.Size = new System.Drawing.Size(43, 39);
+            this.yellow_20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_20.TabIndex = 120;
+            this.yellow_20.TabStop = false;
+            this.yellow_20.Visible = false;
+            // 
+            // yellow_21
+            // 
+            this.yellow_21.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_21.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_21.Location = new System.Drawing.Point(457, 254);
+            this.yellow_21.Name = "yellow_21";
+            this.yellow_21.Size = new System.Drawing.Size(43, 39);
+            this.yellow_21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_21.TabIndex = 121;
+            this.yellow_21.TabStop = false;
+            this.yellow_21.Visible = false;
+            // 
+            // yellow_28
+            // 
+            this.yellow_28.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_28.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_28.Location = new System.Drawing.Point(457, 182);
+            this.yellow_28.Name = "yellow_28";
+            this.yellow_28.Size = new System.Drawing.Size(43, 39);
+            this.yellow_28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_28.TabIndex = 122;
+            this.yellow_28.TabStop = false;
+            this.yellow_28.Visible = false;
+            // 
+            // yellow_27
+            // 
+            this.yellow_27.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_27.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_27.Location = new System.Drawing.Point(387, 183);
+            this.yellow_27.Name = "yellow_27";
+            this.yellow_27.Size = new System.Drawing.Size(43, 39);
+            this.yellow_27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_27.TabIndex = 123;
+            this.yellow_27.TabStop = false;
+            this.yellow_27.Visible = false;
+            // 
+            // yellow_26
+            // 
+            this.yellow_26.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_26.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_26.Location = new System.Drawing.Point(317, 183);
+            this.yellow_26.Name = "yellow_26";
+            this.yellow_26.Size = new System.Drawing.Size(43, 39);
+            this.yellow_26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_26.TabIndex = 124;
+            this.yellow_26.TabStop = false;
+            this.yellow_26.Visible = false;
+            // 
+            // yellow_25
+            // 
+            this.yellow_25.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_25.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_25.Location = new System.Drawing.Point(246, 183);
+            this.yellow_25.Name = "yellow_25";
+            this.yellow_25.Size = new System.Drawing.Size(43, 39);
+            this.yellow_25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_25.TabIndex = 125;
+            this.yellow_25.TabStop = false;
+            this.yellow_25.Visible = false;
+            // 
+            // yellow_24
+            // 
+            this.yellow_24.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_24.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_24.Location = new System.Drawing.Point(177, 183);
+            this.yellow_24.Name = "yellow_24";
+            this.yellow_24.Size = new System.Drawing.Size(43, 39);
+            this.yellow_24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_24.TabIndex = 126;
+            this.yellow_24.TabStop = false;
+            this.yellow_24.Visible = false;
+            // 
+            // yellow_23
+            // 
+            this.yellow_23.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_23.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_23.Location = new System.Drawing.Point(108, 183);
+            this.yellow_23.Name = "yellow_23";
+            this.yellow_23.Size = new System.Drawing.Size(43, 39);
+            this.yellow_23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_23.TabIndex = 127;
+            this.yellow_23.TabStop = false;
+            this.yellow_23.Visible = false;
+            // 
+            // yellow_22
+            // 
+            this.yellow_22.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_22.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_22.Location = new System.Drawing.Point(37, 183);
+            this.yellow_22.Name = "yellow_22";
+            this.yellow_22.Size = new System.Drawing.Size(43, 39);
+            this.yellow_22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_22.TabIndex = 128;
+            this.yellow_22.TabStop = false;
+            this.yellow_22.Visible = false;
+            // 
+            // yellow_29
+            // 
+            this.yellow_29.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_29.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_29.Location = new System.Drawing.Point(37, 113);
+            this.yellow_29.Name = "yellow_29";
+            this.yellow_29.Size = new System.Drawing.Size(43, 39);
+            this.yellow_29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_29.TabIndex = 129;
+            this.yellow_29.TabStop = false;
+            this.yellow_29.Visible = false;
+            // 
+            // yellow_30
+            // 
+            this.yellow_30.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_30.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_30.Location = new System.Drawing.Point(108, 113);
+            this.yellow_30.Name = "yellow_30";
+            this.yellow_30.Size = new System.Drawing.Size(43, 39);
+            this.yellow_30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_30.TabIndex = 130;
+            this.yellow_30.TabStop = false;
+            this.yellow_30.Visible = false;
+            // 
+            // yellow_31
+            // 
+            this.yellow_31.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_31.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_31.Location = new System.Drawing.Point(177, 113);
+            this.yellow_31.Name = "yellow_31";
+            this.yellow_31.Size = new System.Drawing.Size(43, 39);
+            this.yellow_31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_31.TabIndex = 131;
+            this.yellow_31.TabStop = false;
+            this.yellow_31.Visible = false;
+            // 
+            // yellow_32
+            // 
+            this.yellow_32.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_32.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_32.Location = new System.Drawing.Point(246, 113);
+            this.yellow_32.Name = "yellow_32";
+            this.yellow_32.Size = new System.Drawing.Size(43, 39);
+            this.yellow_32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_32.TabIndex = 132;
+            this.yellow_32.TabStop = false;
+            this.yellow_32.Visible = false;
+            // 
+            // yellow_33
+            // 
+            this.yellow_33.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_33.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_33.Location = new System.Drawing.Point(317, 113);
+            this.yellow_33.Name = "yellow_33";
+            this.yellow_33.Size = new System.Drawing.Size(43, 39);
+            this.yellow_33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_33.TabIndex = 133;
+            this.yellow_33.TabStop = false;
+            this.yellow_33.Visible = false;
+            // 
+            // yellow_34
+            // 
+            this.yellow_34.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_34.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_34.Location = new System.Drawing.Point(387, 113);
+            this.yellow_34.Name = "yellow_34";
+            this.yellow_34.Size = new System.Drawing.Size(43, 39);
+            this.yellow_34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_34.TabIndex = 134;
+            this.yellow_34.TabStop = false;
+            this.yellow_34.Visible = false;
+            // 
+            // yellow_35
+            // 
+            this.yellow_35.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_35.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_35.Location = new System.Drawing.Point(457, 113);
+            this.yellow_35.Name = "yellow_35";
+            this.yellow_35.Size = new System.Drawing.Size(43, 39);
+            this.yellow_35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_35.TabIndex = 135;
+            this.yellow_35.TabStop = false;
+            this.yellow_35.Visible = false;
+            // 
+            // yellow_36
+            // 
+            this.yellow_36.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_36.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_36.Location = new System.Drawing.Point(37, 42);
+            this.yellow_36.Name = "yellow_36";
+            this.yellow_36.Size = new System.Drawing.Size(43, 39);
+            this.yellow_36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_36.TabIndex = 136;
+            this.yellow_36.TabStop = false;
+            this.yellow_36.Visible = false;
+            // 
+            // yellow_37
+            // 
+            this.yellow_37.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_37.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_37.Location = new System.Drawing.Point(108, 42);
+            this.yellow_37.Name = "yellow_37";
+            this.yellow_37.Size = new System.Drawing.Size(43, 39);
+            this.yellow_37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_37.TabIndex = 137;
+            this.yellow_37.TabStop = false;
+            this.yellow_37.Visible = false;
+            // 
+            // yellow_38
+            // 
+            this.yellow_38.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_38.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_38.Location = new System.Drawing.Point(176, 42);
+            this.yellow_38.Name = "yellow_38";
+            this.yellow_38.Size = new System.Drawing.Size(43, 39);
+            this.yellow_38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_38.TabIndex = 138;
+            this.yellow_38.TabStop = false;
+            this.yellow_38.Visible = false;
+            // 
+            // yellow_39
+            // 
+            this.yellow_39.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_39.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_39.Location = new System.Drawing.Point(246, 42);
+            this.yellow_39.Name = "yellow_39";
+            this.yellow_39.Size = new System.Drawing.Size(43, 39);
+            this.yellow_39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_39.TabIndex = 139;
+            this.yellow_39.TabStop = false;
+            this.yellow_39.Visible = false;
+            // 
+            // yellow_40
+            // 
+            this.yellow_40.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_40.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_40.Location = new System.Drawing.Point(317, 42);
+            this.yellow_40.Name = "yellow_40";
+            this.yellow_40.Size = new System.Drawing.Size(43, 39);
+            this.yellow_40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_40.TabIndex = 140;
+            this.yellow_40.TabStop = false;
+            this.yellow_40.Visible = false;
+            // 
+            // yellow_41
+            // 
+            this.yellow_41.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_41.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_41.Location = new System.Drawing.Point(387, 42);
+            this.yellow_41.Name = "yellow_41";
+            this.yellow_41.Size = new System.Drawing.Size(43, 39);
+            this.yellow_41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_41.TabIndex = 141;
+            this.yellow_41.TabStop = false;
+            this.yellow_41.Visible = false;
+            // 
+            // yellow_42
+            // 
+            this.yellow_42.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_42.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_42.Location = new System.Drawing.Point(457, 42);
+            this.yellow_42.Name = "yellow_42";
+            this.yellow_42.Size = new System.Drawing.Size(43, 39);
+            this.yellow_42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_42.TabIndex = 142;
+            this.yellow_42.TabStop = false;
+            this.yellow_42.Visible = false;
+            // 
             // twoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -741,6 +1329,48 @@ namespace CIS153_FinalProject
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(536, 648);
             this.ControlBox = false;
+            this.Controls.Add(this.yellow_42);
+            this.Controls.Add(this.yellow_41);
+            this.Controls.Add(this.yellow_40);
+            this.Controls.Add(this.yellow_39);
+            this.Controls.Add(this.yellow_38);
+            this.Controls.Add(this.yellow_37);
+            this.Controls.Add(this.yellow_36);
+            this.Controls.Add(this.yellow_35);
+            this.Controls.Add(this.yellow_34);
+            this.Controls.Add(this.yellow_33);
+            this.Controls.Add(this.yellow_32);
+            this.Controls.Add(this.yellow_31);
+            this.Controls.Add(this.yellow_30);
+            this.Controls.Add(this.yellow_29);
+            this.Controls.Add(this.yellow_22);
+            this.Controls.Add(this.yellow_23);
+            this.Controls.Add(this.yellow_24);
+            this.Controls.Add(this.yellow_25);
+            this.Controls.Add(this.yellow_26);
+            this.Controls.Add(this.yellow_27);
+            this.Controls.Add(this.yellow_28);
+            this.Controls.Add(this.yellow_21);
+            this.Controls.Add(this.yellow_20);
+            this.Controls.Add(this.yellow_19);
+            this.Controls.Add(this.yellow_18);
+            this.Controls.Add(this.yellow_17);
+            this.Controls.Add(this.yellow_16);
+            this.Controls.Add(this.yellow_15);
+            this.Controls.Add(this.yellow_14);
+            this.Controls.Add(this.yellow_13);
+            this.Controls.Add(this.yellow_12);
+            this.Controls.Add(this.yellow_11);
+            this.Controls.Add(this.yellow_10);
+            this.Controls.Add(this.yellow_9);
+            this.Controls.Add(this.yellow_8);
+            this.Controls.Add(this.yellow_7);
+            this.Controls.Add(this.yellow_6);
+            this.Controls.Add(this.yellow_5);
+            this.Controls.Add(this.yellow_4);
+            this.Controls.Add(this.yellow_3);
+            this.Controls.Add(this.yellow_2);
+            this.Controls.Add(this.yellow_1);
             this.Controls.Add(this.btn_drop7);
             this.Controls.Add(this.btn_drop6);
             this.Controls.Add(this.btn_drop5);
@@ -839,6 +1469,48 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.red_31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -898,5 +1570,47 @@ namespace CIS153_FinalProject
         private System.Windows.Forms.Button btn_drop5;
         private System.Windows.Forms.Button btn_drop4;
         private System.Windows.Forms.Button btn_drop7;
+        private System.Windows.Forms.PictureBox yellow_1;
+        private System.Windows.Forms.PictureBox yellow_2;
+        private System.Windows.Forms.PictureBox yellow_3;
+        private System.Windows.Forms.PictureBox yellow_4;
+        private System.Windows.Forms.PictureBox yellow_5;
+        private System.Windows.Forms.PictureBox yellow_6;
+        private System.Windows.Forms.PictureBox yellow_7;
+        private System.Windows.Forms.PictureBox yellow_8;
+        private System.Windows.Forms.PictureBox yellow_9;
+        private System.Windows.Forms.PictureBox yellow_10;
+        private System.Windows.Forms.PictureBox yellow_11;
+        private System.Windows.Forms.PictureBox yellow_12;
+        private System.Windows.Forms.PictureBox yellow_13;
+        private System.Windows.Forms.PictureBox yellow_14;
+        private System.Windows.Forms.PictureBox yellow_15;
+        private System.Windows.Forms.PictureBox yellow_16;
+        private System.Windows.Forms.PictureBox yellow_17;
+        private System.Windows.Forms.PictureBox yellow_18;
+        private System.Windows.Forms.PictureBox yellow_19;
+        private System.Windows.Forms.PictureBox yellow_20;
+        private System.Windows.Forms.PictureBox yellow_21;
+        private System.Windows.Forms.PictureBox yellow_28;
+        private System.Windows.Forms.PictureBox yellow_27;
+        private System.Windows.Forms.PictureBox yellow_26;
+        private System.Windows.Forms.PictureBox yellow_25;
+        private System.Windows.Forms.PictureBox yellow_24;
+        private System.Windows.Forms.PictureBox yellow_23;
+        private System.Windows.Forms.PictureBox yellow_22;
+        private System.Windows.Forms.PictureBox yellow_29;
+        private System.Windows.Forms.PictureBox yellow_30;
+        private System.Windows.Forms.PictureBox yellow_31;
+        private System.Windows.Forms.PictureBox yellow_32;
+        private System.Windows.Forms.PictureBox yellow_33;
+        private System.Windows.Forms.PictureBox yellow_34;
+        private System.Windows.Forms.PictureBox yellow_35;
+        private System.Windows.Forms.PictureBox yellow_36;
+        private System.Windows.Forms.PictureBox yellow_37;
+        private System.Windows.Forms.PictureBox yellow_38;
+        private System.Windows.Forms.PictureBox yellow_39;
+        private System.Windows.Forms.PictureBox yellow_40;
+        private System.Windows.Forms.PictureBox yellow_41;
+        private System.Windows.Forms.PictureBox yellow_42;
     }
 }
