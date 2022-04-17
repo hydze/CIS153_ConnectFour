@@ -36,8 +36,8 @@ namespace CIS153_FinalProject
             txt_pWins.Text = statsArray[2].ToString();
             if (statsArray[2] != 0)
             {
-                double pPer = Convert.ToDouble(statsArray[2]) / Convert.ToDouble(statsArray[0]) * 100;
-                txt_pPer.Text = pPer.ToString();
+                double pPer = Convert.ToDouble(statsArray[2]) / Convert.ToDouble(statsArray[0]);
+                txt_pPer.Text = pPer.ToString("P");
             }
             else
             {
@@ -48,8 +48,8 @@ namespace CIS153_FinalProject
             txt_cWins.Text = statsArray[3].ToString();
             if (statsArray[3] != 0)
             {
-                double cPer = Convert.ToDouble(statsArray[3]) / Convert.ToDouble(statsArray[0]) * 100;
-                txt_cPer.Text = cPer.ToString();
+                double cPer = Convert.ToDouble(statsArray[3]) / Convert.ToDouble(statsArray[0]);
+                txt_cPer.Text = cPer.ToString("P");
             }
             else
             {
