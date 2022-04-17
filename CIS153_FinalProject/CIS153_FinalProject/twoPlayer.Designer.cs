@@ -123,6 +123,8 @@ namespace CIS153_FinalProject
             this.yellow_40 = new System.Windows.Forms.PictureBox();
             this.yellow_41 = new System.Windows.Forms.PictureBox();
             this.yellow_42 = new System.Windows.Forms.PictureBox();
+            this.yellow_turn = new System.Windows.Forms.PictureBox();
+            this.red_turn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_8)).BeginInit();
@@ -208,6 +210,8 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_turn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.red_turn)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_exit
@@ -1322,6 +1326,29 @@ namespace CIS153_FinalProject
             this.yellow_42.TabStop = false;
             this.yellow_42.Visible = false;
             // 
+            // yellow_turn
+            // 
+            this.yellow_turn.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_turn.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_turn.Location = new System.Drawing.Point(464, 522);
+            this.yellow_turn.Name = "yellow_turn";
+            this.yellow_turn.Size = new System.Drawing.Size(43, 39);
+            this.yellow_turn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_turn.TabIndex = 143;
+            this.yellow_turn.TabStop = false;
+            this.yellow_turn.Visible = false;
+            // 
+            // red_turn
+            // 
+            this.red_turn.BackColor = System.Drawing.Color.Transparent;
+            this.red_turn.Image = global::CIS153_FinalProject.Properties.Resources.red_token;
+            this.red_turn.Location = new System.Drawing.Point(22, 522);
+            this.red_turn.Name = "red_turn";
+            this.red_turn.Size = new System.Drawing.Size(43, 39);
+            this.red_turn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.red_turn.TabIndex = 144;
+            this.red_turn.TabStop = false;
+            // 
             // twoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1329,6 +1356,8 @@ namespace CIS153_FinalProject
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(536, 648);
             this.ControlBox = false;
+            this.Controls.Add(this.red_turn);
+            this.Controls.Add(this.yellow_turn);
             this.Controls.Add(this.yellow_42);
             this.Controls.Add(this.yellow_41);
             this.Controls.Add(this.yellow_40);
@@ -1511,6 +1540,8 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_turn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.red_turn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1612,5 +1643,7 @@ namespace CIS153_FinalProject
         private System.Windows.Forms.PictureBox yellow_40;
         private System.Windows.Forms.PictureBox yellow_41;
         private System.Windows.Forms.PictureBox yellow_42;
+        private System.Windows.Forms.PictureBox yellow_turn;
+        private System.Windows.Forms.PictureBox red_turn;
     }
 }

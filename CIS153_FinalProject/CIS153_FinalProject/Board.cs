@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CIS153_FinalProject
 {
-    enum Color
+    public enum Color
     {
         RED,
         YELLOW,
         NONE
     }
 
-    class Cell
+    public class Cell
     {
         int color;          //0 YELLOW, 1 RED, 2 NONE
 
@@ -23,7 +23,7 @@ namespace CIS153_FinalProject
         }
     }
 
-    class Board
+    public class Board
     {
 
         private int column = 7;
@@ -50,6 +50,11 @@ namespace CIS153_FinalProject
 
         public bool hasWinner()
         {
+            //if(moves > 2) //using this to test game over form loading and board correctly passing between forms on game over
+            //{
+            //    return true;
+            //}
+
             return checkWinHorizontal() || checkWinVertical() || checkWinDiagonal();
         }
 
@@ -134,6 +139,7 @@ namespace CIS153_FinalProject
                     lastPlayer = currentPlayer;
                     //switches current player color
                     currentPlayer = currentPlayer == Color.RED ? Color.YELLOW : Color.RED;
+                    moves++; // a coin was inserted increment moves counter
                     return i;
                 }
             }

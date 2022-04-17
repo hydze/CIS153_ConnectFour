@@ -69,117 +69,38 @@ namespace CIS153_FinalProject
 
         private void btn_drop1_Click(object sender, EventArgs e)
         {
-            if (board.canPlaceCoin(0))
-            {
-                int row = 5 - board.insertCoin(0);
-                var imgPlace = 0 + row * 7;
-
-                var c = board.getGameBoard();
-
-                var res = "";
-
-                foreach(var r in c)
-                {
-                    res += string.Join(" ", r);
-                    res += "\n";
-                }
-                Console.WriteLine(row);
-                MessageBox.Show(res);
-
-                Color TokenColor = board.getLastPlayer();  //last player is REALLY current player before insertCoin changes player above
-               
-                if (TokenColor == Color.RED)
-                {
-                    var img = redCoins[imgPlace];
-                    img.Visible = true;
-                }
-                if (TokenColor == Color.YELLOW)
-                {
-                    var img = yellowCoins[imgPlace];
-                    img.Visible = true;
-                }
-
-            }
-            if (board.hasWinner())
-            {
-                //
-              
-            }
-                
+            buttonClick(0);    
         }
 
-        //[red1, red2, red3, red4, red5, red6]
 
         private void btn_drop2_Click(object sender, EventArgs e)
         {
-            if (board.canPlaceCoin(1))
-            {
-                board.insertCoin(1);
-            }
-            if (board.hasWinner())
-            {
-                //
-            }
+            buttonClick(1);
         }
 
         private void btn_drop3_Click(object sender, EventArgs e)
         {
-            if (board.canPlaceCoin(2))
-            {
-                board.insertCoin(2);
-            }
-            if (board.hasWinner())
-            {
-                //
-            }
+            buttonClick(2);
         }
 
         private void btn_drop4_Click(object sender, EventArgs e)
         {
-            if (board.canPlaceCoin(3))
-            {
-                board.insertCoin(3);
-            }
-            if (board.hasWinner())
-            {
-                //
-            }
+            buttonClick(3);
         }
 
         private void btn_drop5_Click(object sender, EventArgs e)
         {
-            if (board.canPlaceCoin(4))
-            {
-                board.insertCoin(4);
-            }
-            if (board.hasWinner())
-            {
-                //
-            }
+            buttonClick(4);
         }
 
         private void btn_drop6_Click(object sender, EventArgs e)
         {
-            if (board.canPlaceCoin(5))
-            {
-                board.insertCoin(5);
-            }
-            if (board.hasWinner())
-            {
-                //
-            }
+            buttonClick(5);
         }
 
         private void btn_drop7_Click(object sender, EventArgs e)
         {
-            if (board.canPlaceCoin(6))
-            {
-                board.insertCoin(6);
-            }
-            if (board.hasWinner())
-            {
-                //
-            }
+            buttonClick(6);
         }
 
         private void updateImages(int col)
@@ -200,6 +121,58 @@ namespace CIS153_FinalProject
                 {
 
                 }
+            }
+        }
+
+        private void buttonClick(int col)
+        {
+
+            if (board.canPlaceCoin(col))
+            {
+                int row = 5 - board.insertCoin(col);
+                var imgPlace = col + row * 7;
+
+                /////Debug to see array
+                var c = board.getGameBoard();
+                var res = "";
+                foreach (var r in c)
+                {
+                    res += string.Join(" ", r);
+                    res += "\n";
+                }
+                //MessageBox.Show(res); //disable or enable debug output
+                /////
+                
+                Color TokenColor = board.getLastPlayer();  //last player is REALLY current player before insertCoin changes player above
+
+                if (TokenColor == Color.RED)
+                {
+                    var img = redCoins[imgPlace];
+                    img.Visible = true;
+                    red_turn.Visible = false;
+                    yellow_turn.Visible = true;
+                }
+                if (TokenColor == Color.YELLOW)
+                {
+                    var img = yellowCoins[imgPlace];
+                    img.Visible = true;
+                    yellow_turn.Visible = false;
+                    red_turn.Visible = true;
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Invalid Move");
+            }
+            if (board.hasWinner())
+            {
+                //we still need to set a winner and a game type of single/multi to pass to next form, unless we want to get it from the board info once we load the next screen somehow
+                sForm.setLastBoard(board); //save board state
+                this.Close();
+                gameOver formToLoad = new gameOver(sForm); //pass it the start form since we keep info there to pass around
+                formToLoad.Show(); //show statsForm
+
             }
         }
     }

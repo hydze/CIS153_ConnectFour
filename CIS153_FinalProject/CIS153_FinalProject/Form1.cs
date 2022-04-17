@@ -14,6 +14,7 @@ namespace CIS153_FinalProject
     public partial class Form1 : Form
     {
         private int[]  statsArray = new int[4];
+        private Board lastGameBoard = new Board();
 
         public Form1()
         {
@@ -166,6 +167,18 @@ namespace CIS153_FinalProject
             gameOver formToLoad = new gameOver(this);
             formToLoad.Show(); //show statsForm
             this.Hide();
+        }
+
+
+        //adding these to get/set the last game board in the Form1 we pass around so we can keep it and use it anywhere
+        public void setLastBoard(Board b)
+        {
+            lastGameBoard = b;
+        }
+
+        public Board getLastBoard()
+        {
+            return lastGameBoard;
         }
 
 

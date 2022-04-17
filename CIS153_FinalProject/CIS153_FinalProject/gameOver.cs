@@ -24,6 +24,18 @@ namespace CIS153_FinalProject
             InitializeComponent();
             sForm = sF;
 
+            Board lastBoard = sForm.getLastBoard();
+            var c = lastBoard.getGameBoard();
+            var res = "";
+            
+            foreach (var r in c)
+            {
+                res += string.Join(" ", r);
+                res += "\n";
+            }
+            
+            //MessageBox.Show(res);  //making sure the board was passed correctly to game over form
+
 
             lbl_winner.Text = "Winner Here"; //need to do functionality to get this info
 
