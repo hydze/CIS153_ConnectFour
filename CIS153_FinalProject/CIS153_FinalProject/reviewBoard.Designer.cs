@@ -1,7 +1,7 @@
 ﻿
 namespace CIS153_FinalProject
 {
-    partial class singlePlayer
+    partial class reviewBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -74,13 +74,6 @@ namespace CIS153_FinalProject
             this.red_31 = new System.Windows.Forms.PictureBox();
             this.red_38 = new System.Windows.Forms.PictureBox();
             this.red_39 = new System.Windows.Forms.PictureBox();
-            this.btn_drop1 = new System.Windows.Forms.Button();
-            this.btn_drop2 = new System.Windows.Forms.Button();
-            this.btn_drop3 = new System.Windows.Forms.Button();
-            this.btn_drop6 = new System.Windows.Forms.Button();
-            this.btn_drop5 = new System.Windows.Forms.Button();
-            this.btn_drop4 = new System.Windows.Forms.Button();
-            this.btn_drop7 = new System.Windows.Forms.Button();
             this.yellow_1 = new System.Windows.Forms.PictureBox();
             this.yellow_2 = new System.Windows.Forms.PictureBox();
             this.yellow_3 = new System.Windows.Forms.PictureBox();
@@ -123,8 +116,6 @@ namespace CIS153_FinalProject
             this.yellow_40 = new System.Windows.Forms.PictureBox();
             this.yellow_41 = new System.Windows.Forms.PictureBox();
             this.yellow_42 = new System.Windows.Forms.PictureBox();
-            this.yellow_turn = new System.Windows.Forms.PictureBox();
-            this.red_turn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_8)).BeginInit();
@@ -210,8 +201,6 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yellow_turn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.red_turn)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_exit
@@ -752,90 +741,6 @@ namespace CIS153_FinalProject
             this.red_39.TabStop = false;
             this.red_39.Visible = false;
             // 
-            // btn_drop1
-            // 
-            this.btn_drop1.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drop1.Location = new System.Drawing.Point(27, 452);
-            this.btn_drop1.Name = "btn_drop1";
-            this.btn_drop1.Size = new System.Drawing.Size(61, 35);
-            this.btn_drop1.TabIndex = 94;
-            this.btn_drop1.UseVisualStyleBackColor = true;
-            this.btn_drop1.Click += new System.EventHandler(this.btn_drop1_Click);
-            this.btn_drop1.MouseLeave += new System.EventHandler(this.btn_drop1_MouseLeave);
-            this.btn_drop1.MouseHover += new System.EventHandler(this.btn_drop1_MouseHover);
-            // 
-            // btn_drop2
-            // 
-            this.btn_drop2.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drop2.Location = new System.Drawing.Point(97, 452);
-            this.btn_drop2.Name = "btn_drop2";
-            this.btn_drop2.Size = new System.Drawing.Size(61, 35);
-            this.btn_drop2.TabIndex = 95;
-            this.btn_drop2.UseVisualStyleBackColor = true;
-            this.btn_drop2.Click += new System.EventHandler(this.btn_drop2_Click);
-            this.btn_drop2.MouseLeave += new System.EventHandler(this.btn_drop2_MouseLeave);
-            this.btn_drop2.MouseHover += new System.EventHandler(this.btn_drop2_MouseHover);
-            // 
-            // btn_drop3
-            // 
-            this.btn_drop3.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drop3.Location = new System.Drawing.Point(166, 452);
-            this.btn_drop3.Name = "btn_drop3";
-            this.btn_drop3.Size = new System.Drawing.Size(61, 35);
-            this.btn_drop3.TabIndex = 96;
-            this.btn_drop3.UseVisualStyleBackColor = true;
-            this.btn_drop3.Click += new System.EventHandler(this.btn_drop3_Click);
-            this.btn_drop3.MouseLeave += new System.EventHandler(this.btn_drop3_MouseLeave);
-            this.btn_drop3.MouseHover += new System.EventHandler(this.btn_drop3_MouseHover);
-            // 
-            // btn_drop6
-            // 
-            this.btn_drop6.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drop6.Location = new System.Drawing.Point(374, 453);
-            this.btn_drop6.Name = "btn_drop6";
-            this.btn_drop6.Size = new System.Drawing.Size(61, 35);
-            this.btn_drop6.TabIndex = 99;
-            this.btn_drop6.UseVisualStyleBackColor = true;
-            this.btn_drop6.Click += new System.EventHandler(this.btn_drop6_Click);
-            this.btn_drop6.MouseLeave += new System.EventHandler(this.btn_drop6_MouseLeave);
-            this.btn_drop6.MouseHover += new System.EventHandler(this.btn_drop6_MouseHover);
-            // 
-            // btn_drop5
-            // 
-            this.btn_drop5.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drop5.Location = new System.Drawing.Point(303, 453);
-            this.btn_drop5.Name = "btn_drop5";
-            this.btn_drop5.Size = new System.Drawing.Size(61, 35);
-            this.btn_drop5.TabIndex = 98;
-            this.btn_drop5.UseVisualStyleBackColor = true;
-            this.btn_drop5.Click += new System.EventHandler(this.btn_drop5_Click);
-            this.btn_drop5.MouseLeave += new System.EventHandler(this.btn_drop5_MouseLeave);
-            this.btn_drop5.MouseHover += new System.EventHandler(this.btn_drop5_MouseHover);
-            // 
-            // btn_drop4
-            // 
-            this.btn_drop4.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drop4.Location = new System.Drawing.Point(234, 453);
-            this.btn_drop4.Name = "btn_drop4";
-            this.btn_drop4.Size = new System.Drawing.Size(61, 35);
-            this.btn_drop4.TabIndex = 97;
-            this.btn_drop4.UseVisualStyleBackColor = true;
-            this.btn_drop4.Click += new System.EventHandler(this.btn_drop4_Click);
-            this.btn_drop4.MouseLeave += new System.EventHandler(this.btn_drop4_MouseLeave);
-            this.btn_drop4.MouseHover += new System.EventHandler(this.btn_drop4_MouseHover);
-            // 
-            // btn_drop7
-            // 
-            this.btn_drop7.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drop7.Location = new System.Drawing.Point(446, 452);
-            this.btn_drop7.Name = "btn_drop7";
-            this.btn_drop7.Size = new System.Drawing.Size(61, 35);
-            this.btn_drop7.TabIndex = 100;
-            this.btn_drop7.UseVisualStyleBackColor = true;
-            this.btn_drop7.Click += new System.EventHandler(this.btn_drop7_Click);
-            this.btn_drop7.MouseLeave += new System.EventHandler(this.btn_drop7_MouseLeave);
-            this.btn_drop7.MouseHover += new System.EventHandler(this.btn_drop7_MouseHover);
-            // 
             // yellow_1
             // 
             this.yellow_1.BackColor = System.Drawing.Color.Transparent;
@@ -1340,38 +1245,13 @@ namespace CIS153_FinalProject
             this.yellow_42.TabStop = false;
             this.yellow_42.Visible = false;
             // 
-            // yellow_turn
-            // 
-            this.yellow_turn.BackColor = System.Drawing.Color.Transparent;
-            this.yellow_turn.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
-            this.yellow_turn.Location = new System.Drawing.Point(464, 522);
-            this.yellow_turn.Name = "yellow_turn";
-            this.yellow_turn.Size = new System.Drawing.Size(43, 39);
-            this.yellow_turn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yellow_turn.TabIndex = 143;
-            this.yellow_turn.TabStop = false;
-            this.yellow_turn.Visible = false;
-            // 
-            // red_turn
-            // 
-            this.red_turn.BackColor = System.Drawing.Color.Transparent;
-            this.red_turn.Image = global::CIS153_FinalProject.Properties.Resources.red_token;
-            this.red_turn.Location = new System.Drawing.Point(22, 522);
-            this.red_turn.Name = "red_turn";
-            this.red_turn.Size = new System.Drawing.Size(43, 39);
-            this.red_turn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.red_turn.TabIndex = 144;
-            this.red_turn.TabStop = false;
-            // 
-            // singlePlayer
+            // reviewBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(536, 648);
             this.ControlBox = false;
-            this.Controls.Add(this.red_turn);
-            this.Controls.Add(this.yellow_turn);
             this.Controls.Add(this.yellow_42);
             this.Controls.Add(this.yellow_41);
             this.Controls.Add(this.yellow_40);
@@ -1414,13 +1294,6 @@ namespace CIS153_FinalProject
             this.Controls.Add(this.yellow_3);
             this.Controls.Add(this.yellow_2);
             this.Controls.Add(this.yellow_1);
-            this.Controls.Add(this.btn_drop7);
-            this.Controls.Add(this.btn_drop6);
-            this.Controls.Add(this.btn_drop5);
-            this.Controls.Add(this.btn_drop4);
-            this.Controls.Add(this.btn_drop3);
-            this.Controls.Add(this.btn_drop2);
-            this.Controls.Add(this.btn_drop1);
             this.Controls.Add(this.red_39);
             this.Controls.Add(this.red_38);
             this.Controls.Add(this.red_31);
@@ -1466,9 +1339,9 @@ namespace CIS153_FinalProject
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_main);
             this.Controls.Add(this.btn_exit);
-            this.Name = "singlePlayer";
+            this.Name = "reviewBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "singlePlayer";
+            this.Text = "reviewGame";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_8)).EndInit();
@@ -1554,8 +1427,6 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yellow_turn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.red_turn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1608,13 +1479,6 @@ namespace CIS153_FinalProject
         private System.Windows.Forms.PictureBox red_31;
         private System.Windows.Forms.PictureBox red_38;
         private System.Windows.Forms.PictureBox red_39;
-        private System.Windows.Forms.Button btn_drop1;
-        private System.Windows.Forms.Button btn_drop2;
-        private System.Windows.Forms.Button btn_drop3;
-        private System.Windows.Forms.Button btn_drop6;
-        private System.Windows.Forms.Button btn_drop5;
-        private System.Windows.Forms.Button btn_drop4;
-        private System.Windows.Forms.Button btn_drop7;
         private System.Windows.Forms.PictureBox yellow_1;
         private System.Windows.Forms.PictureBox yellow_2;
         private System.Windows.Forms.PictureBox yellow_3;
@@ -1657,7 +1521,5 @@ namespace CIS153_FinalProject
         private System.Windows.Forms.PictureBox yellow_40;
         private System.Windows.Forms.PictureBox yellow_41;
         private System.Windows.Forms.PictureBox yellow_42;
-        private System.Windows.Forms.PictureBox yellow_turn;
-        private System.Windows.Forms.PictureBox red_turn;
     }
 }

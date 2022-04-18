@@ -110,6 +110,9 @@ namespace CIS153_FinalProject
             //this.Close();
 
             //you can get last gameboard with sForm.getLastBoard();
+            reviewBoard formToLoad = new reviewBoard(sForm); //NEW GAME
+            formToLoad.Show();
+            this.Close();
 
         }
 
