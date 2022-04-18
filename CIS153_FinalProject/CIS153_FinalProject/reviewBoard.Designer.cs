@@ -221,7 +221,7 @@ namespace CIS153_FinalProject
             this.btn_main.Name = "btn_main";
             this.btn_main.Size = new System.Drawing.Size(357, 56);
             this.btn_main.TabIndex = 6;
-            this.btn_main.Text = "Main Menu";
+            this.btn_main.Text = "Back";
             this.btn_main.UseVisualStyleBackColor = true;
             this.btn_main.Click += new System.EventHandler(this.btn_main_Click);
             // 

@@ -55,26 +55,6 @@ namespace CIS153_FinalProject
 
 
 
-        private void updateImages(int col)
-        {
-            var b = board.getGameBoard();
-
-            var allFields = new List<PictureBox>();
-
-
-
-            for (int i = 0; i < b.GetLength(0); i++)
-            {
-                if (b[i, col] == Color.RED)
-                {
-
-                }
-                else if (b[i, col] == Color.RED)
-                {
-
-                }
-            }
-        }
 
         private void buttonClick(int col)
         {
@@ -85,13 +65,13 @@ namespace CIS153_FinalProject
                 var imgPlace = col + row * 7;
 
                 /////Debug to see array
-                var c = board.getGameBoard();
-                var res = "";
-                foreach (var r in c)
-                {
-                    res += string.Join(" ", r);
-                    res += "\n";
-                }
+                //var c = board.getGameBoard();
+                //var res = "";
+                //foreach (var r in c)
+                //{
+                //   res += string.Join(" ", r);
+                //    res += "\n";
+                //}
                 //MessageBox.Show(res); //disable or enable debug output
                 /////
 
@@ -123,7 +103,7 @@ namespace CIS153_FinalProject
                 sForm.setLastBoard(board); //save board state
                 this.Close();
                 gameOver formToLoad = new gameOver(sForm); //pass it the start form since we keep info there to pass around
-                formToLoad.Show(); //show statsForm
+                formToLoad.Show();
 
             }
         }

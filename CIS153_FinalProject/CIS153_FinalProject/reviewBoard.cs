@@ -50,47 +50,45 @@ namespace CIS153_FinalProject
             yellow_36, yellow_37, yellow_38, yellow_39, yellow_40, yellow_41, yellow_42});
 
             /////Debug to see array
-            var c = board.getGameBoard();
-            var res = "";
-            foreach (var r in c)
-            {
-                res += string.Join(" ", r);
-                res += "\n";
-            }
-            MessageBox.Show(res); //disable or enable debug output
+            //var c = board.getGameBoard();
+            //var res = "";
+            //foreach (var r in c)
+            //{
+            //    res += string.Join(" ", r);
+            //    res += "\n";
+            //}
+            //MessageBox.Show(res); //disable or enable array debug output
             /////
 
-            updateImages(1); //this doesnt work how i expected need fix
-            updateImages(2);
-            updateImages(3);
-            updateImages(4);
-            updateImages(5);
-
+            placeTokens();
 
 
 
         }
 
 
-
-        private void updateImages(int col) //tried to use this, doesnt work how i expected, but havent looked into it yet
+        private void placeTokens()
         {
             Board lastBoard = sForm.getLastBoard();
             var b = lastBoard.getGameBoard();
-
-            var allFields = new List<PictureBox>();
-
-
-            for (int i = 0; i < b.GetLength(0); i++)
+            int[] map = new int[] { 36, 37, 38, 39, 40, 41, 42, 29, 30, 31, 32, 33, 34, 35, 22, 23, 24, 25, 26, 27, 28, 15, 16, 17, 18, 19, 20, 21, 8, 9, 10, 11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7 }; //our button #s match up weird with the array traversed from this angle so this was just quicker to static map, array is also off by 1 from game board bcause we started at button 1 instead of 0
+            int iter = 0;
+            foreach (Color r in b)
             {
-                if (b[i, col] == Color.RED)
+                if (r == Color.RED)
                 {
-
+                    int spot = map[iter] - 1;
+                    var img = redCoins[spot];
+                    img.Visible = true;
                 }
-                else if (b[i, col] == Color.RED)
+                if (r == Color.YELLOW)
                 {
-
+                    int spot = map[iter] - 1;
+                    var img = yellowCoins[spot];
+                    img.Visible = true;
                 }
+
+                iter++;
             }
         }
 
@@ -102,8 +100,9 @@ namespace CIS153_FinalProject
 
         private void btn_main_Click(object sender, EventArgs e)
         {
-            sForm.Show();
             this.Close();
+            gameOver formToLoad = new gameOver(sForm); //pass it the start form since we keep info there to pass around
+            formToLoad.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
