@@ -176,35 +176,26 @@ namespace CIS153_FinalProject
             }
         }
 
-        private void btn_drop1_MouseHover(object sender, EventArgs e)
-        {
-            buttonHover(0);
-        }
-
         private void buttonHover(int col)
         {
-
             if (board.canPlaceCoin(col))
             {
-                    int row = 5 - board.insertCoinHover(col);
-                    var imgPlace = col + row * 7;
+                int row = 5 - board.insertCoinHover(col);
+                var imgPlace = col + row * 7;
 
-                    Color TokenColor = board.getLastPlayer();  //last player is REALLY current player before insertCoin changes player above
+                if (red_turn.Visible == true)
+                {
+                    var img = redCoins[imgPlace];
+                    img.Visible = true;
 
-                    if (TokenColor == Color.RED)
-                    {
-                        var img = redCoins[imgPlace];
-                        img.Visible = true;
-         
-                    }
-                    if (TokenColor == Color.YELLOW)
-                    {
-                        var img = yellowCoins[imgPlace];
-                        img.Visible = true;
-
-                    }
                 }
-            
+                if (yellow_turn.Visible == true)
+                {
+                    var img = yellowCoins[imgPlace];
+                    img.Visible = true;
+
+                }
+            }
         }
 
         private void buttonLeave(int col)
@@ -218,11 +209,75 @@ namespace CIS153_FinalProject
 
         }
 
-        
 
+        private void btn_drop1_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(0);
+        }
+      
         private void btn_drop1_MouseLeave(object sender, EventArgs e)
         {
             buttonLeave(0);
+        }
+
+        private void btn_drop2_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(1);
+        }
+
+        private void btn_drop2_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLeave(1);
+        }
+
+        private void btn_drop3_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(2);
+        }
+
+        private void btn_drop3_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLeave(2);
+        }
+
+        private void btn_drop4_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(3);
+        }
+
+        private void btn_drop4_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLeave(3);
+        }
+
+        private void btn_drop5_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(4);
+        }
+
+        private void btn_drop5_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLeave(4);
+        }
+
+        private void btn_drop6_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(5);
+        }
+
+        private void btn_drop6_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLeave(5);
+        }
+
+        private void btn_drop7_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(6);
+        }
+
+        private void btn_drop7_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLeave(6);
         }
     }
 }

@@ -773,6 +773,8 @@ namespace CIS153_FinalProject
             this.btn_drop2.TabIndex = 95;
             this.btn_drop2.UseVisualStyleBackColor = true;
             this.btn_drop2.Click += new System.EventHandler(this.btn_drop2_Click);
+            this.btn_drop2.MouseLeave += new System.EventHandler(this.btn_drop2_MouseLeave);
+            this.btn_drop2.MouseHover += new System.EventHandler(this.btn_drop2_MouseHover);
             // 
             // btn_drop3
             // 
@@ -783,6 +785,8 @@ namespace CIS153_FinalProject
             this.btn_drop3.TabIndex = 96;
             this.btn_drop3.UseVisualStyleBackColor = true;
             this.btn_drop3.Click += new System.EventHandler(this.btn_drop3_Click);
+            this.btn_drop3.MouseLeave += new System.EventHandler(this.btn_drop3_MouseLeave);
+            this.btn_drop3.MouseHover += new System.EventHandler(this.btn_drop3_MouseHover);
             // 
             // btn_drop6
             // 
@@ -793,6 +797,8 @@ namespace CIS153_FinalProject
             this.btn_drop6.TabIndex = 99;
             this.btn_drop6.UseVisualStyleBackColor = true;
             this.btn_drop6.Click += new System.EventHandler(this.btn_drop6_Click);
+            this.btn_drop6.MouseLeave += new System.EventHandler(this.btn_drop6_MouseLeave);
+            this.btn_drop6.MouseHover += new System.EventHandler(this.btn_drop6_MouseHover);
             // 
             // btn_drop5
             // 
@@ -803,6 +809,8 @@ namespace CIS153_FinalProject
             this.btn_drop5.TabIndex = 98;
             this.btn_drop5.UseVisualStyleBackColor = true;
             this.btn_drop5.Click += new System.EventHandler(this.btn_drop5_Click);
+            this.btn_drop5.MouseLeave += new System.EventHandler(this.btn_drop5_MouseLeave);
+            this.btn_drop5.MouseHover += new System.EventHandler(this.btn_drop5_MouseHover);
             // 
             // btn_drop4
             // 
@@ -813,6 +821,8 @@ namespace CIS153_FinalProject
             this.btn_drop4.TabIndex = 97;
             this.btn_drop4.UseVisualStyleBackColor = true;
             this.btn_drop4.Click += new System.EventHandler(this.btn_drop4_Click);
+            this.btn_drop4.MouseLeave += new System.EventHandler(this.btn_drop4_MouseLeave);
+            this.btn_drop4.MouseHover += new System.EventHandler(this.btn_drop4_MouseHover);
             // 
             // btn_drop7
             // 
@@ -823,6 +833,8 @@ namespace CIS153_FinalProject
             this.btn_drop7.TabIndex = 100;
             this.btn_drop7.UseVisualStyleBackColor = true;
             this.btn_drop7.Click += new System.EventHandler(this.btn_drop7_Click);
+            this.btn_drop7.MouseLeave += new System.EventHandler(this.btn_drop7_MouseLeave);
+            this.btn_drop7.MouseHover += new System.EventHandler(this.btn_drop7_MouseHover);
             // 
             // yellow_1
             // 
