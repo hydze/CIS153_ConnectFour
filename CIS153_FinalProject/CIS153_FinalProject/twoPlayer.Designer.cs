@@ -761,6 +761,8 @@ namespace CIS153_FinalProject
             this.btn_drop1.TabIndex = 94;
             this.btn_drop1.UseVisualStyleBackColor = true;
             this.btn_drop1.Click += new System.EventHandler(this.btn_drop1_Click);
+            this.btn_drop1.MouseLeave += new System.EventHandler(this.btn_drop1_MouseLeave);
+            this.btn_drop1.MouseHover += new System.EventHandler(this.btn_drop1_MouseHover);
             // 
             // btn_drop2
             // 

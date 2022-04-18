@@ -175,5 +175,54 @@ namespace CIS153_FinalProject
 
             }
         }
+
+        private void btn_drop1_MouseHover(object sender, EventArgs e)
+        {
+            buttonHover(0);
+        }
+
+        private void buttonHover(int col)
+        {
+
+            if (board.canPlaceCoin(col))
+            {
+                    int row = 5 - board.insertCoinHover(col);
+                    var imgPlace = col + row * 7;
+
+                    Color TokenColor = board.getLastPlayer();  //last player is REALLY current player before insertCoin changes player above
+
+                    if (TokenColor == Color.RED)
+                    {
+                        var img = redCoins[imgPlace];
+                        img.Visible = true;
+         
+                    }
+                    if (TokenColor == Color.YELLOW)
+                    {
+                        var img = yellowCoins[imgPlace];
+                        img.Visible = true;
+
+                    }
+                }
+            
+        }
+
+        private void buttonLeave(int col)
+        {
+            int row = 5 - board.insertCoinHover(col);
+            var imgPlace = col + row * 7;
+            var img = redCoins[imgPlace];
+            img.Visible = false;
+            var img2 = yellowCoins[imgPlace];
+            img2.Visible = false;
+
+        }
+
+        
+
+        private void btn_drop1_MouseLeave(object sender, EventArgs e)
+        {
+            buttonLeave(0);
+        }
     }
 }
