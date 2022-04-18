@@ -116,6 +116,10 @@ namespace CIS153_FinalProject
             this.yellow_40 = new System.Windows.Forms.PictureBox();
             this.yellow_41 = new System.Windows.Forms.PictureBox();
             this.yellow_42 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_win = new System.Windows.Forms.Label();
+            this.yellow_token = new System.Windows.Forms.PictureBox();
+            this.red_token = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_8)).BeginInit();
@@ -201,6 +205,8 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_token)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.red_token)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_exit
@@ -1245,6 +1251,52 @@ namespace CIS153_FinalProject
             this.yellow_42.TabStop = false;
             this.yellow_42.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(42, 465);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(178, 22);
+            this.label1.TabIndex = 143;
+            this.label1.Text = "Winner is:";
+            // 
+            // lbl_win
+            // 
+            this.lbl_win.AutoSize = true;
+            this.lbl_win.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_win.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_win.Location = new System.Drawing.Point(275, 465);
+            this.lbl_win.Name = "lbl_win";
+            this.lbl_win.Size = new System.Drawing.Size(69, 22);
+            this.lbl_win.TabIndex = 144;
+            this.lbl_win.Text = "NaN";
+            // 
+            // yellow_token
+            // 
+            this.yellow_token.BackColor = System.Drawing.Color.Transparent;
+            this.yellow_token.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
+            this.yellow_token.Location = new System.Drawing.Point(226, 460);
+            this.yellow_token.Name = "yellow_token";
+            this.yellow_token.Size = new System.Drawing.Size(43, 39);
+            this.yellow_token.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellow_token.TabIndex = 145;
+            this.yellow_token.TabStop = false;
+            this.yellow_token.Visible = false;
+            // 
+            // red_token
+            // 
+            this.red_token.BackColor = System.Drawing.Color.Transparent;
+            this.red_token.Image = global::CIS153_FinalProject.Properties.Resources.red_token;
+            this.red_token.Location = new System.Drawing.Point(226, 460);
+            this.red_token.Name = "red_token";
+            this.red_token.Size = new System.Drawing.Size(43, 39);
+            this.red_token.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.red_token.TabIndex = 146;
+            this.red_token.TabStop = false;
+            this.red_token.Visible = false;
+            // 
             // reviewBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1252,6 +1304,10 @@ namespace CIS153_FinalProject
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(536, 648);
             this.ControlBox = false;
+            this.Controls.Add(this.red_token);
+            this.Controls.Add(this.yellow_token);
+            this.Controls.Add(this.lbl_win);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.yellow_42);
             this.Controls.Add(this.yellow_41);
             this.Controls.Add(this.yellow_40);
@@ -1427,6 +1483,8 @@ namespace CIS153_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.yellow_40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellow_token)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.red_token)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1521,5 +1579,9 @@ namespace CIS153_FinalProject
         private System.Windows.Forms.PictureBox yellow_40;
         private System.Windows.Forms.PictureBox yellow_41;
         private System.Windows.Forms.PictureBox yellow_42;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_win;
+        private System.Windows.Forms.PictureBox yellow_token;
+        private System.Windows.Forms.PictureBox red_token;
     }
 }

@@ -28,6 +28,7 @@ namespace CIS153_FinalProject
             InitializeComponent();
 
             sForm = sF;
+            string gameWin = "NaN";
 
             //game stuff goes here
 
@@ -62,7 +63,18 @@ namespace CIS153_FinalProject
 
             placeTokens();
 
+            if (sForm.getGameWinner() == 1)
+            {
+                gameWin = "RED";
+                red_token.Visible = true;
+            }
+            if (sForm.getGameWinner() == 2)
+            {
+                gameWin = "YELLOW";
+                yellow_token.Visible = true;
+            }
 
+            lbl_win.Text = gameWin;
 
         }
 
