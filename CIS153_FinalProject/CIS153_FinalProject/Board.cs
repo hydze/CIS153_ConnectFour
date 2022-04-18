@@ -69,7 +69,7 @@ namespace CIS153_FinalProject
             {
                 for (int ii = 0; ii < column - 3; ii++)
                 {
-                    if(gameBoard[i, ii] == currentPlayer && gameBoard[i, ii + 1] == currentPlayer && gameBoard[i, ii + 2] == currentPlayer &&  gameBoard[i, ii + 3] == currentPlayer)
+                    if(gameBoard[i, ii] == lastPlayer && gameBoard[i, ii + 1] == lastPlayer && gameBoard[i, ii + 2] == lastPlayer &&  gameBoard[i, ii + 3] == lastPlayer)
                     {
                         return true;
                     }
@@ -84,7 +84,7 @@ namespace CIS153_FinalProject
             {
                 for (int ii = 0; ii < column; ii++)
                 {
-                    if (gameBoard[i, ii] == currentPlayer && gameBoard[i + 1, ii] == currentPlayer && gameBoard[i + 2, ii] == currentPlayer && gameBoard[i + 3, ii] == currentPlayer)
+                    if (gameBoard[i, ii] == lastPlayer && gameBoard[i + 1, ii] == lastPlayer && gameBoard[i + 2, ii] == lastPlayer && gameBoard[i + 3, ii] == lastPlayer)
                     {
                         return true;
                     }
@@ -100,7 +100,7 @@ namespace CIS153_FinalProject
             {
                 for (int ii = 0; ii < column - 3; ii++)
                 {
-                    if (gameBoard[i, ii] == currentPlayer && gameBoard[i + 1, ii + 1] == currentPlayer && gameBoard[i + 2, ii + 2] == currentPlayer && gameBoard[i + 3, ii + 3] == currentPlayer)
+                    if (gameBoard[i, ii] == lastPlayer && gameBoard[i + 1, ii + 1] == lastPlayer && gameBoard[i + 2, ii + 2] == lastPlayer && gameBoard[i + 3, ii + 3] == lastPlayer)
                     {
                         return true;
                     }

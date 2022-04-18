@@ -99,6 +99,14 @@ namespace CIS153_FinalProject
             }
             if (board.hasWinner())
             {
+                if(board.getLastPlayer() == Color.RED)
+                {
+                    sForm.setGameWinner(1);
+                }
+                if (board.getLastPlayer() == Color.YELLOW)
+                {
+                    sForm.setGameWinner(2);
+                }
                 //we still need to set a winner and a game type of single/multi to pass to next form, unless we want to get it from the board info once we load the next screen somehow
                 sForm.setLastBoard(board); //save board state
                 this.Close();
