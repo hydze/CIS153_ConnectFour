@@ -31,7 +31,7 @@ namespace CIS153_FinalProject
 
             //game stuff goes here
 
-            board = new Board();
+            board = sForm.getLastBoard();
             redCoins = new List<PictureBox>();
             yellowCoins = new List<PictureBox>();
 
@@ -49,13 +49,25 @@ namespace CIS153_FinalProject
             yellow_29, yellow_30, yellow_31, yellow_32, yellow_33, yellow_34, yellow_35,
             yellow_36, yellow_37, yellow_38, yellow_39, yellow_40, yellow_41, yellow_42});
 
-
+            /////Debug to see array
+            var c = board.getGameBoard();
+            var res = "";
+            foreach (var r in c)
+            {
+                res += string.Join(" ", r);
+                res += "\n";
+            }
+            MessageBox.Show(res); //disable or enable debug output
+            /////
 
             updateImages(1); //this doesnt work how i expected need fix
             updateImages(2);
             updateImages(3);
             updateImages(4);
             updateImages(5);
+
+
+
 
         }
 
