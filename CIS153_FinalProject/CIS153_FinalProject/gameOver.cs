@@ -23,21 +23,28 @@ namespace CIS153_FinalProject
         {
             InitializeComponent();
             sForm = sF;
+            string gameWin = "NaN";
 
-            Board lastBoard = sForm.getLastBoard();
-            var c = lastBoard.getGameBoard();
-            var res = "";
-            
-            foreach (var r in c)
-            {
-                res += string.Join(" ", r);
-                res += "\n";
-            }
-            
+            //Board lastBoard = sForm.getLastBoard();
+            //var c = lastBoard.getGameBoard();
+            //var res = ""; 
+            //foreach (var r in c)
+            //{
+            //    res += string.Join(" ", r);
+            //    res += "\n";
+            //}
             //MessageBox.Show(res);  //making sure the board was passed correctly to game over form
 
-
-            lbl_winner.Text = "Winner Here"; //need to do functionality to get this info
+            if (sForm.getGameWinner() == 1)
+            {
+                gameWin = "RED";
+            }
+            if (sForm.getGameWinner() == 2)
+            {
+                gameWin = "YELLOW";
+            }
+               
+            lbl_winner.Text = gameWin; //need to add sForm.setGameWinner(1|2); to winning logic to set this
 
 
             int[] statsArray = new int[4];
@@ -77,7 +84,23 @@ namespace CIS153_FinalProject
 
         private void btn_playAgain_Click(object sender, EventArgs e)
         {
-
+            if (sForm.getGameType() == 1) //replay single player
+            {
+                singlePlayer formToLoad = new singlePlayer(sForm); //NEW GAME
+                formToLoad.Show();
+                this.Close();
+            }
+            if (sForm.getGameType() == 2) //replay double player
+            {
+                twoPlayer formToLoad = new twoPlayer(sForm); //NEW GAME
+                formToLoad.Show();
+                this.Close();
+            }
+            if (sForm.getGameType() == 0) //SOMETHINGS WRONG OR DEBUG -- goes main menu
+            {
+                sForm.Show();
+                this.Close();
+            }
         }
 
         private void btn_review_Click(object sender, EventArgs e)
@@ -85,6 +108,9 @@ namespace CIS153_FinalProject
             //was going back to main menu when test viewing this page
             //sForm.Show();
             //this.Close();
+
+            //you can get last gameboard with sForm.getLastBoard();
+
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

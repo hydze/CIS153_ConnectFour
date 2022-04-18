@@ -31,6 +31,8 @@ namespace CIS153_FinalProject
 
             //game stuff goes here
 
+            sForm.setGameType(2); //record game type for replay on game over screen
+
             board = new Board();
             redCoins = new List<PictureBox>();
             yellowCoins = new List<PictureBox>();
@@ -51,57 +53,7 @@ namespace CIS153_FinalProject
 
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
 
-        private void btn_main_Click(object sender, EventArgs e)
-        {
-            sForm.Show();
-            this.Close();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_drop1_Click(object sender, EventArgs e)
-        {
-            buttonClick(0);    
-        }
-
-
-        private void btn_drop2_Click(object sender, EventArgs e)
-        {
-            buttonClick(1);
-        }
-
-        private void btn_drop3_Click(object sender, EventArgs e)
-        {
-            buttonClick(2);
-        }
-
-        private void btn_drop4_Click(object sender, EventArgs e)
-        {
-            buttonClick(3);
-        }
-
-        private void btn_drop5_Click(object sender, EventArgs e)
-        {
-            buttonClick(4);
-        }
-
-        private void btn_drop6_Click(object sender, EventArgs e)
-        {
-            buttonClick(5);
-        }
-
-        private void btn_drop7_Click(object sender, EventArgs e)
-        {
-            buttonClick(6);
-        }
 
         private void updateImages(int col)
         {
@@ -109,13 +61,13 @@ namespace CIS153_FinalProject
 
             var allFields = new List<PictureBox>();
 
-            
+
 
             for (int i = 0; i < b.GetLength(0); i++)
             {
                 if (b[i, col] == Color.RED)
                 {
-                    
+
                 }
                 else if (b[i, col] == Color.RED)
                 {
@@ -142,7 +94,7 @@ namespace CIS153_FinalProject
                 }
                 //MessageBox.Show(res); //disable or enable debug output
                 /////
-                
+
                 Color TokenColor = board.getLastPlayer();  //last player is REALLY current player before insertCoin changes player above
 
                 if (TokenColor == Color.RED)
@@ -209,6 +161,64 @@ namespace CIS153_FinalProject
 
         }
 
+
+
+
+
+
+
+
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void btn_main_Click(object sender, EventArgs e)
+        {
+            sForm.Show();
+            this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_drop1_Click(object sender, EventArgs e)
+        {
+            buttonClick(0);    
+        }
+
+        private void btn_drop2_Click(object sender, EventArgs e)
+        {
+            buttonClick(1);
+        }
+
+        private void btn_drop3_Click(object sender, EventArgs e)
+        {
+            buttonClick(2);
+        }
+
+        private void btn_drop4_Click(object sender, EventArgs e)
+        {
+            buttonClick(3);
+        }
+
+        private void btn_drop5_Click(object sender, EventArgs e)
+        {
+            buttonClick(4);
+        }
+
+        private void btn_drop6_Click(object sender, EventArgs e)
+        {
+            buttonClick(5);
+        }
+
+        private void btn_drop7_Click(object sender, EventArgs e)
+        {
+            buttonClick(6);
+        }
 
         private void btn_drop1_MouseHover(object sender, EventArgs e)
         {

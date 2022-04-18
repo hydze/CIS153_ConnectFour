@@ -13,8 +13,11 @@ namespace CIS153_FinalProject
 {
     public partial class Form1 : Form
     {
+        //vars we hold in the main form to pass around
         private int[]  statsArray = new int[4];
-        private Board lastGameBoard = new Board();
+        private Board lastGameBoard = new Board(); // for game review on game over page
+        private int gameType = 0; //1 = single player - 2 = double player - for replay on game over page
+        private int gameWinner = 0; //1 = red player - 2 = yellow player - for game over page
 
         public Form1()
         {
@@ -181,6 +184,25 @@ namespace CIS153_FinalProject
             return lastGameBoard;
         }
 
+        public void setGameType(int g)
+        {
+            gameType = g;
+        }
+
+        public int getGameType()
+        {
+            return gameType;
+        }
+
+        public void setGameWinner(int g)
+        {
+            gameWinner = g;
+        }
+
+        public int getGameWinner()
+        {
+            return gameWinner;
+        }
 
     }
 }
