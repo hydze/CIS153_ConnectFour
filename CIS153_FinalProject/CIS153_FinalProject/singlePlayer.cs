@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -31,7 +32,8 @@ namespace CIS153_FinalProject
 
             //game stuff goes here
 
-            sForm.setGameType(1); //record game type for replay on game over screen
+            sForm.setGameType(1); //set single player game type for replay
+            sForm.updateStats('g'); // a new game was started
 
             board = new Board();
             redCoins = new List<PictureBox>();
@@ -51,30 +53,12 @@ namespace CIS153_FinalProject
             yellow_29, yellow_30, yellow_31, yellow_32, yellow_33, yellow_34, yellow_35,
             yellow_36, yellow_37, yellow_38, yellow_39, yellow_40, yellow_41, yellow_42});
 
+
         }
 
 
 
-        private void updateImages(int col)
-        {
-            var b = board.getGameBoard();
-
-            var allFields = new List<PictureBox>();
-
-
-
-            for (int i = 0; i < b.GetLength(0); i++)
-            {
-                if (b[i, col] == Color.RED)
-                {
-
-                }
-                else if (b[i, col] == Color.RED)
-                {
-
-                }
-            }
-        }
+ 
 
         private void buttonClick(int col)
         {
@@ -85,13 +69,13 @@ namespace CIS153_FinalProject
                 var imgPlace = col + row * 7;
 
                 /////Debug to see array
-                var c = board.getGameBoard();
-                var res = "";
-                foreach (var r in c)
-                {
-                    res += string.Join(" ", r);
-                    res += "\n";
-                }
+                //var c = board.getGameBoard();
+                //var res = "";
+                //foreach (var r in c)
+                //{
+                //    res += string.Join(" ", r);
+                //    res += "\n";
+                //}
                 //MessageBox.Show(res); //disable or enable debug output
                 /////
 
@@ -117,14 +101,36 @@ namespace CIS153_FinalProject
             {
                 MessageBox.Show("Invalid Move");
             }
-            if (board.hasWinner())
+            if (board.isFinished())
             {
+                if (board.getLastPlayer() == Color.RED)
+                {
+                    sForm.updateStats('p'); //player win
+                    sForm.setGameWinner(1);
+                }
+                if (board.getLastPlayer() == Color.YELLOW)
+                {
+                    sForm.updateStats('c'); //computer win
+                    sForm.setGameWinner(2);
+                }
+                if (board.getMoves() == 42)
+                {
+                    sForm.updateStats('t'); //tie condition?
+                }
+
                 //we still need to set a winner and a game type of single/multi to pass to next form, unless we want to get it from the board info once we load the next screen somehow
                 sForm.setLastBoard(board); //save board state
                 this.Close();
                 gameOver formToLoad = new gameOver(sForm); //pass it the start form since we keep info there to pass around
                 formToLoad.Show(); //show statsForm
 
+            }
+            else //bot was taking another turn after player win, didnt stop win, but showed up on review form
+            {
+                if (board.getLastPlayer() == Color.RED)
+                {
+                    botTurn();
+                }
             }
         }
 
@@ -164,7 +170,32 @@ namespace CIS153_FinalProject
 
 
 
+        private void botTurn()
+        {
+            //Lock player out during bot turn (kinda disables 2player)
+            btn_drop1.Enabled = false;
+            btn_drop2.Enabled = false;
+            btn_drop3.Enabled = false;
+            btn_drop4.Enabled = false;
+            btn_drop5.Enabled = false;
+            btn_drop6.Enabled = false;
+            btn_drop7.Enabled = false;
 
+            //FIGURE OUT WHAT MOVES TO MAKE AND WHY HERE
+
+            ////Make move column 0-6 
+            buttonClick(1);
+
+            //Enable buttons for player turn
+            btn_drop1.Enabled = true;
+            btn_drop2.Enabled = true;
+            btn_drop3.Enabled = true;
+            btn_drop4.Enabled = true;
+            btn_drop5.Enabled = true;
+            btn_drop6.Enabled = true;
+            btn_drop7.Enabled = true;
+
+        }
 
 
 

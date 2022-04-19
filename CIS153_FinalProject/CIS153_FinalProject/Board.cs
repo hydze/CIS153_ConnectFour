@@ -30,7 +30,7 @@ namespace CIS153_FinalProject
         private int row = 6;
         private int moves = 0;
         private Color currentPlayer;
-        private Color lastPlayer; //since currentPlayer is reassinged in insertcoin before the images are updated in the twoPlayer form im adding this to get the color of which token we should make visible
+        private Color lastPlayer = Color.RED; //since currentPlayer is reassinged in insertcoin before the images are updated in the twoPlayer form im adding this to get the color of which token we should make visible
 
         private Color[,] gameBoard;
 
@@ -161,12 +161,21 @@ namespace CIS153_FinalProject
 
         public bool isFinished()
         {
-            return hasWinner() || moves == 42;
+            if(hasWinner() || moves == 42)
+            {
+                return true;
+            }
+            return false;
         }
 
         public Color getLastPlayer() //misleading name as we are using it to set the game token visiblity on different form
         {
             return lastPlayer;
+        }
+
+        public int getMoves()
+        {
+            return moves;
         }
 
     }

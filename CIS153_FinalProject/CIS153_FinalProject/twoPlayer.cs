@@ -97,7 +97,7 @@ namespace CIS153_FinalProject
             {
                 MessageBox.Show("Invalid Move");
             }
-            if (board.hasWinner())
+            if (board.isFinished())
             {
                 if(board.getLastPlayer() == Color.RED)
                 {
