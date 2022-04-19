@@ -129,7 +129,9 @@ namespace CIS153_FinalProject
             {
                 if (board.getLastPlayer() == Color.RED)
                 {
+                    Thread.Sleep(500);
                     botTurn();
+
                 }
             }
         }
@@ -172,6 +174,7 @@ namespace CIS153_FinalProject
 
         private void botTurn()
         {
+            
             //Lock player out during bot turn (kinda disables 2player)
             btn_drop1.Enabled = false;
             btn_drop2.Enabled = false;
@@ -181,12 +184,23 @@ namespace CIS153_FinalProject
             btn_drop6.Enabled = false;
             btn_drop7.Enabled = false;
 
-            //FIGURE OUT WHAT MOVES TO MAKE AND WHY HERE
+            
+            int column = 8; //this will break stuff if a different move isnt selected below before buttonClick(column);
 
+            
+
+            if( 1 == 1) //FIGURE OUT WHAT MOVES TO MAKE AND SET column TO BEST MOVE
+            {
+                column = 1;
+            }
+
+
+            
             ////Make move column 0-6 
-            buttonClick(1);
+            buttonClick(column);
 
-            //Enable buttons for player turn
+
+            //Enable buttons again for player turn
             btn_drop1.Enabled = true;
             btn_drop2.Enabled = true;
             btn_drop3.Enabled = true;
@@ -194,6 +208,7 @@ namespace CIS153_FinalProject
             btn_drop5.Enabled = true;
             btn_drop6.Enabled = true;
             btn_drop7.Enabled = true;
+
 
         }
 

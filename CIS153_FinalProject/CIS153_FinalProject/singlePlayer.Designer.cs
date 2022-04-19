@@ -1344,7 +1344,7 @@ namespace CIS153_FinalProject
             // 
             this.yellow_turn.BackColor = System.Drawing.Color.Transparent;
             this.yellow_turn.Image = global::CIS153_FinalProject.Properties.Resources.yellow_token;
-            this.yellow_turn.Location = new System.Drawing.Point(464, 522);
+            this.yellow_turn.Location = new System.Drawing.Point(470, 522);
             this.yellow_turn.Name = "yellow_turn";
             this.yellow_turn.Size = new System.Drawing.Size(43, 39);
             this.yellow_turn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
