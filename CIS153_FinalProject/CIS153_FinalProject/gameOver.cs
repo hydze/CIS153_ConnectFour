@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Media;
 
 namespace CIS153_FinalProject
 {
     public partial class gameOver : Form
     {
+        Stream soundFile;
+        SoundPlayer soundplayer;
+
         Form1 sForm;
 
         public gameOver()
@@ -21,6 +26,8 @@ namespace CIS153_FinalProject
 
         public gameOver(Form1 sF)
         {
+
+
             InitializeComponent();
             sForm = sF;
             string gameWin = "NaN";
@@ -38,14 +45,23 @@ namespace CIS153_FinalProject
             if (sForm.getGameWinner() == 1)
             {
                 gameWin = "RED";
+
+                soundFile = Properties.Resources.cheering;
+                soundplayer = new SoundPlayer(soundFile);
+                playSound();
             }
             if (sForm.getGameWinner() == 2)
             {
+                //I did this not under the assumption that player 2 would
+                //always be an AI, but the assumption that player 2 sucks.
+
                 gameWin = "YELLOW";
+                soundFile = Properties.Resources.boo;
+                soundplayer = new SoundPlayer(soundFile);
+                playSound();
             }
                
             lbl_winner.Text = gameWin; //need to add sForm.setGameWinner(1|2); to winning logic to set this
-
 
             int[] statsArray = new int[4];
             statsArray = sF.returnStats();
@@ -120,5 +136,12 @@ namespace CIS153_FinalProject
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void playSound()
+        {
+            soundplayer.Play();
+        }
+
+
     }
 }

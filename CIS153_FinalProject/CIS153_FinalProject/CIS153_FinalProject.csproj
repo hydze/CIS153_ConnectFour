@@ -148,5 +148,32 @@
   <ItemGroup>
     <None Include="Resources\yellow_token.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can_pop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boing3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boing_x.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boing_poing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheering.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_crash2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_crash.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boing_spring.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

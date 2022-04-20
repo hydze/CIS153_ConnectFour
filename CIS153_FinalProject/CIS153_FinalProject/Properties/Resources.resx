@@ -136,4 +136,31 @@
   <data name="yellow_token" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yellow_token.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boing3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boing3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="boing_poing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boing_poing.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="boing_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boing_x.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="boo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boo.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="can_pop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\can_pop.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="car_crash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_crash.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="car_crash2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_crash2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cheering" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cheering.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="boing_spring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boing_spring.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

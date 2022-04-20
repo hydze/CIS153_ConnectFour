@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Media;
 
 namespace CIS153_FinalProject
 {
@@ -17,6 +19,9 @@ namespace CIS153_FinalProject
         Board board;
         List<PictureBox> redCoins;
         List<PictureBox> yellowCoins;
+
+        Stream soundFile;
+        SoundPlayer soundplayer;
 
         public singlePlayer()
         {
@@ -62,6 +67,7 @@ namespace CIS153_FinalProject
 
         private void buttonClick(int col)
         {
+            SoundPicker();
 
             if (board.canPlaceCoin(col))
             {
@@ -334,6 +340,48 @@ namespace CIS153_FinalProject
         private void btn_drop7_MouseLeave(object sender, EventArgs e)
         {
             buttonLeave(6);
+        }
+
+        private void playSound()
+        {
+            soundplayer.Play();
+        }
+
+        private void SoundPicker()
+        {
+            Random rnd = new Random();
+            int num = rnd.Next(1, 6);
+
+            if (num == 1)
+            {
+                soundFile = Properties.Resources.boing_x;
+                soundplayer = new SoundPlayer(soundFile);
+                playSound();
+            }
+            else if (num == 2)
+            {
+                soundFile = Properties.Resources.boing_poing;
+                soundplayer = new SoundPlayer(soundFile);
+                playSound();
+            }
+            else if (num == 3)
+            {
+                soundFile = Properties.Resources.boing_spring;
+                soundplayer = new SoundPlayer(soundFile);
+                playSound();
+            }
+            else if (num == 4)
+            {
+                soundFile = Properties.Resources.can_pop;
+                soundplayer = new SoundPlayer(soundFile);
+                playSound();
+            }
+            else if (num == 5)
+            {
+                soundFile = Properties.Resources.car_crash;
+                soundplayer = new SoundPlayer(soundFile);
+                playSound();
+            }
         }
     }
 }

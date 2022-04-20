@@ -8,11 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Media;
 
 namespace CIS153_FinalProject
 {
     public partial class Form1 : Form
     {
+        //Setting up the soundplayer
+        Stream soundFile;
+        SoundPlayer soundplayer;
+
         //vars we hold in the main form to pass around
         private int[]  statsArray = new int[4];
         private Board lastGameBoard = new Board(); // for game review on game over page
@@ -24,10 +29,15 @@ namespace CIS153_FinalProject
             InitializeComponent();
 
             readStats(); //read file when program starts
-            
 
+            soundFile = Properties.Resources.boing3;
+            soundplayer = new SoundPlayer(soundFile);
+            playSound();
         }
 
+
+
+        
         
 
         //EXIT BUTTON - FINISHED
@@ -204,5 +214,9 @@ namespace CIS153_FinalProject
             return gameWinner;
         }
 
+        private void playSound()
+        {
+            soundplayer.Play();
+        }
     }
 }
