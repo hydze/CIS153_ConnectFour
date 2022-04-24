@@ -50,11 +50,6 @@ namespace CIS153_FinalProject
 
         public bool hasWinner()
         {
-            //if(moves > 2) //using this to test game over form loading and board correctly passing between forms on game over
-            //{
-            //    return true;
-            //}
-
             return checkWinHorizontal() || checkWinVertical() || checkWinDiagonal();
         }
 
@@ -95,30 +90,39 @@ namespace CIS153_FinalProject
 
         public bool checkWinDiagonal()
         {
-            // Check top left to bottom right
-            for (int i = 0; i < row - 3; i++)
+            try
             {
-                for (int ii = 0; ii < column - 3; ii++)
+                // Check top left to bottom right
+                for (int i = 0; i < row - 3; i++)
                 {
-                    if (gameBoard[i, ii] == lastPlayer && gameBoard[i + 1, ii + 1] == lastPlayer && gameBoard[i + 2, ii + 2] == lastPlayer && gameBoard[i + 3, ii + 3] == lastPlayer)
+                    for (int ii = 0; ii < column - 3; ii++)
                     {
-                        return true;
+                        if (gameBoard[i, ii] == lastPlayer && gameBoard[i + 1, ii + 1] == lastPlayer && gameBoard[i + 2, ii + 2] == lastPlayer && gameBoard[i + 3, ii + 3] == lastPlayer)
+                        {
+                            return true;
+                        }
                     }
                 }
+
+                // Check bottom left to top right
+                // TODO -- FIX WHEN DESIGN IS CREATED
+                for (int i = 0; i < row - 3; i++)
+                {
+                    for (int ii = 0; ii < column - 3; ii++)
+                    {
+                        if (gameBoard[i, ii] == currentPlayer && gameBoard[i + 1, ii - 1] == currentPlayer && gameBoard[i + 2, ii - 2] == currentPlayer && gameBoard[i + 3, ii - 3] == currentPlayer)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                return false;
+                //Console.WriteLine("Too much sauce");
             }
 
-            // Check bottom left to top right
-            // TODO -- FIX WHEN DESIGN IS CREATED
-            for (int i = 0; i < row - 3; i++)
-            {
-                for (int ii = 0; ii < column - 3; ii++)
-                {
-                    if (gameBoard[i, ii] == currentPlayer && gameBoard[i + 1, ii - 1] == currentPlayer && gameBoard[i + 2, ii - 2] == currentPlayer && gameBoard[i + 3, ii - 3] == currentPlayer)
-                    {
-                        return true;
-                    }
-                }
-            }
             return false;
         }
 
@@ -126,9 +130,12 @@ namespace CIS153_FinalProject
         {
             Console.WriteLine(c.ToString());
 
-            if(gameBoard[0, c] == Color.NONE)
+            if (c >= 0 && c <= 6)
             {
-                return true;
+                if (gameBoard[0, c] == Color.NONE)
+                {
+                    return true;
+                }
             }
             return false;
         }
@@ -185,18 +192,61 @@ namespace CIS153_FinalProject
         }
 
 
-        public int takeWinHorizontal() //idealy this should return an int of the column to insert at
+
+
+
+        /// stuff for 'AI' 6 basic rules + more logic in botTurn
+        public int takeHorizontalWin() 
         {
             for (int i = 0; i < row; i++)
             {
                 for (int ii = 0; ii < column - 3; ii++)
                 {
-                    if (gameBoard[i, ii] == Color.YELLOW && gameBoard[i, ii + 1] == Color.YELLOW && gameBoard[i, ii + 2] == Color.YELLOW)
+                    try
                     {
-                        return ii + 3;
+                        if (gameBoard[i, ii] == Color.YELLOW && gameBoard[i, ii + 1] == Color.YELLOW && gameBoard[i, ii + 2] == Color.YELLOW)
+                        {
+                            //pick which side to put coin on
+                            if (canPlaceCoin(ii + 3))
+                            {
+                                return ii + 3;
+                            }
+                            if (canPlaceCoin(ii - 1))
+                            {
+                                return ii - 1;
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Checked out of bounds");
                     }
                 }
             }
+            return 99;
+        }
+
+        public int blockHorizontalBase() //favor center in overall strategy, if red has center take a spot on side to hold base level
+        {
+            if(gameBoard[5,3] == Color.RED && moves == 1)
+            {
+                if (canPlaceCoin(4))
+                {
+                    return 4;
+                }
+            }
+            if (gameBoard[5,3] == Color.RED && moves > 1)
+            {
+                if (canPlaceCoin(2))
+                {
+                    return 2;
+                }
+                else if(canPlaceCoin(1))
+                {
+                    return 1;
+                }
+            }
+
             return 99;
         }
 
@@ -212,18 +262,113 @@ namespace CIS153_FinalProject
                 for (int row = 5; row >= 0; row--)
                 {
                     //Console.WriteLine(row.ToString());
-
-                    if (gameBoard[row, col] == Color.RED && gameBoard[row - 1, col] == Color.RED && gameBoard[row - 2, col] == Color.RED)
+                    try
                     {
-                        //due to the nature of board structure, you only ever need to block once as there are not enough spots to try again
-                        
-                        return col;
+                        if (gameBoard[row, col] == Color.RED && gameBoard[row - 1, col] == Color.RED && gameBoard[row - 2, col] == Color.RED)
+                        {
+                            //due to the nature of board structure, you only ever need to block once  for each column as there are not enough spots to try again
+                            return col;
+                        }
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Checked out of bounds");
                     }
                 }
             }
             return 99;
         }
 
+        public int takeVerticalWin() //return 
+        {
+            for (int col = 0; col <= 6; col++)
+            {
+
+                //Console.WriteLine(col.ToString());
+
+                for (int row = 5; row >= 0; row--)
+                {
+                    //Console.WriteLine(row.ToString());
+
+                    try
+                    {
+                        if (gameBoard[row, col] == Color.YELLOW && gameBoard[row - 1, col] == Color.YELLOW && gameBoard[row - 2, col] == Color.YELLOW)
+                        {
+                            return col;
+                        }
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Checked out of bounds");
+                    }
+                }
+            }
+            return 99;
+        }
+
+        public int pushVertical2() //return 
+        {
+            for (int col = 0; col <= 6; col++)
+            {
+                bool stop = false;
+
+                //Console.WriteLine(col.ToString());
+
+                for (int row = 5; row >= 0; row--)
+                {
+                    //Console.WriteLine(row.ToString());
+
+                    if (stop == false)
+                    {
+                        try
+                        {
+                            if (gameBoard[row, col] == Color.YELLOW)
+                            {
+                                if(gameBoard[row -1, col] != Color.RED)
+                                {
+                                    return col;
+                                }
+                            }
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Checked out of bounds");
+                        }
+                    }
+                }
+            }
+            return 99;
+        }
+
+        public int pushVertical3() //return 
+        {
+            for (int col = 0; col <= 6; col++)
+            {
+
+                //Console.WriteLine(col.ToString());
+
+                for (int row = 5; row >= 0; row--)
+                {
+                    //Console.WriteLine(row.ToString());
+
+                    try
+                    {
+                        if (gameBoard[row, col] == Color.YELLOW && gameBoard[row - 1, col] == Color.YELLOW)
+                        {
+                            if (gameBoard[row - 1, col] != Color.RED)
+                            {
+                                return col;
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Checked out of bounds");
+                    }
+                }
+            }
+            return 99;
+        }
 
     }
 }

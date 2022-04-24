@@ -33,6 +33,14 @@ namespace CIS153_FinalProject
         private bool colBlock6 = false;
 
 
+        //Lock player out of base row
+        private bool rowBlock1 = false;
+        private bool rowBlock2 = false;
+        private bool rowBlock4 = false;
+
+
+        private bool hotMove = false;
+
         public singlePlayer()
         {
             InitializeComponent();
@@ -85,17 +93,6 @@ namespace CIS153_FinalProject
             {
                 int row = 5 - board.insertCoin(col);
                 var imgPlace = col + row * 7;
-
-                /////Debug to see array
-                //var c = board.getGameBoard();
-                //var res = "";
-                //foreach (var r in c)
-                //{
-                //    res += string.Join(" ", r);
-                //    res += "\n";
-                //}
-                //MessageBox.Show(res); //disable or enable debug output
-                /////
 
                 Color TokenColor = board.getLastPlayer();  //last player is REALLY current player before insertCoin changes player above
 
@@ -162,6 +159,9 @@ namespace CIS153_FinalProject
             }
         }
 
+
+
+
         private void buttonHover(int col)
         {
             if (board.canPlaceCoin(col))
@@ -202,7 +202,8 @@ namespace CIS153_FinalProject
 
         private void botTurn()
         {
-            
+            hotMove = false;
+
             //Lock player out during bot turn (kinda disables 2player)
             btn_drop1.Enabled = false;
             btn_drop2.Enabled = false;
@@ -213,21 +214,18 @@ namespace CIS153_FinalProject
             btn_drop7.Enabled = false;
 
             //Thread.Sleep(5000);
-            int column = 8; //this will intentionally break stuff if a different move isnt selected below before buttonClick(column);
+            int column = 3; //Column 3 is the default hotness since it mostly locks the board out
 
-            //if (board.takeWinHorizontal() != 99)
-            //{
-            //    column = board.takeWinHorizontal();
-            //}
-            if (board.blockVertical() !=99) //block opponents vertical wins once each column a game if needed
+            if (board.blockVertical() != 99 && hotMove == false) //block opponents vertical wins once each column a game if needed
             {
-                if(board.blockVertical() == 0)
+                if (board.blockVertical() == 0)
                 {
-                    if(colBlock0 == false)
+                    if (colBlock0 == false)
                     {
                         colBlock0 = true;
-                        column = board.blockVertical();
-                    }                  
+                        hotMove = true;
+                        column = 0;
+                    }
                 }
 
                 if (board.blockVertical() == 1)
@@ -235,7 +233,8 @@ namespace CIS153_FinalProject
                     if (colBlock1 == false)
                     {
                         colBlock1 = true;
-                        column = board.blockVertical();
+                        hotMove = true;
+                        column = 1;
                     }
                 }
 
@@ -244,7 +243,8 @@ namespace CIS153_FinalProject
                     if (colBlock2 == false)
                     {
                         colBlock2 = true;
-                        column = board.blockVertical();
+                        hotMove = true;
+                        column = 2;
                     }
                 }
 
@@ -253,7 +253,8 @@ namespace CIS153_FinalProject
                     if (colBlock3 == false)
                     {
                         colBlock3 = true;
-                        column = board.blockVertical();
+                        hotMove = true;
+                        column = 3;
                     }
                 }
 
@@ -262,7 +263,8 @@ namespace CIS153_FinalProject
                     if (colBlock4 == false)
                     {
                         colBlock4 = true;
-                        column = board.blockVertical();
+                        hotMove = true;
+                        column = 4;
                     }
                 }
 
@@ -271,7 +273,8 @@ namespace CIS153_FinalProject
                     if (colBlock5 == false)
                     {
                         colBlock5 = true;
-                        column = board.blockVertical();
+                        hotMove = true;
+                        column = 5;
                     }
                 }
 
@@ -280,25 +283,88 @@ namespace CIS153_FinalProject
                     if (colBlock6 == false)
                     {
                         colBlock6 = true;
-                        column = board.blockVertical();
+                        hotMove = true;
+                        column = 6;
+                    }
+                }
+            }
+
+            if (board.takeHorizontalWin() != 99 && hotMove == false)
+            {
+                column = board.takeHorizontalWin();
+            }
+            if (board.takeVerticalWin() != 99 && hotMove == false)
+            {
+                column = board.takeVerticalWin();
+                hotMove = true;
+            }
+
+
+
+            if (board.blockHorizontalBase() != 99 && hotMove == false) // attempt to lock opponent out of base row
+            {
+                if (board.blockHorizontalBase() == 4)
+                {
+                    if (rowBlock4 == false)
+                    {
+                        rowBlock4 = true;
+                        hotMove = true;
+                        column = board.blockHorizontalBase();
                     }
                 }
 
+                if (board.blockHorizontalBase() == 2)
+                {
+                    if (rowBlock2 == false)
+                    {
+                        rowBlock2 = true;
+                        hotMove = true;
+                        column = board.blockHorizontalBase();
+                    }
+                }
 
-
-
+                if (board.blockHorizontalBase() == 1)
+                {
+                    if (rowBlock1 == false)
+                    {
+                        rowBlock1 = true;
+                        hotMove = true;
+                        column = board.blockHorizontalBase();
+                    }
+                }
             }
             else
             {
-                //Middle collumn is KING, and essential to most wins, its block non vertical wins, we want to hold this
-                if (board.canPlaceCoin(3)) //take and hold middle row 
+                //Middle collumn is KING, and essential to most wins, its block non vertical wins, we want to hold this by default
+                if (board.canPlaceCoin(3) && hotMove == false) //take and hold middle row 
                 {
                     column = 3;
-                }  
+                }
+                else
+                {
+                    if (hotMove == false)
+                    {
+                        //Pick a column and if we have a run keep pushing if possible and we dont need to block
+                        if (board.pushVertical2() != 99)
+                        {
+                            if (board.canPlaceCoin(board.pushVertical2()))
+                            {
+                                column = board.pushVertical2();
+                            }
+                        }
+                        if (board.pushVertical3() != 99)
+                        {
+                            if (board.canPlaceCoin(board.pushVertical3()))
+                            {
+                                column = board.pushVertical3();
+                            }
+                        }
+                    }
+                }
 
             }
 
-            if(column == 8) //if nothing else makes sense, pick a random column thats open
+            if (column == 8 && hotMove == false) //if nothing else makes sense, pick a random column thats open
             {
                 Random diceRoll = new Random();
                 int tryColumn = diceRoll.Next(0, 6);
@@ -308,8 +374,19 @@ namespace CIS153_FinalProject
                 }
                 column = tryColumn;
             }
-            
-            ////Make move column 0-6 
+            if (board.canPlaceCoin(column) == false) //while it shouldnt never happen after other changes made, if we cannot make the move we selected for some reason, pick one
+            {
+                Random diceRoll = new Random();
+                int tryColumn = diceRoll.Next(0, 6);
+                while (board.canPlaceCoin(tryColumn) == false)
+                {
+                    tryColumn = diceRoll.Next(0, 6);
+                }
+                column = tryColumn;
+            }
+
+
+            ////Make move we choose from column 0-6 
             buttonClick(column);
 
 
