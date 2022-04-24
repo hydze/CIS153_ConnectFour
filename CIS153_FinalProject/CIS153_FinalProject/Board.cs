@@ -113,7 +113,7 @@ namespace CIS153_FinalProject
             {
                 for (int ii = 0; ii < column - 3; ii++)
                 {
-                    if (gameBoard[i, ii] == currentPlayer && gameBoard[i - 1, ii + 1] == currentPlayer && gameBoard[i - 2, ii + 2] == currentPlayer && gameBoard[i - 3, ii + 3] == currentPlayer)
+                    if (gameBoard[i, ii] == currentPlayer && gameBoard[i + 1, ii - 1] == currentPlayer && gameBoard[i + 2, ii - 2] == currentPlayer && gameBoard[i + 3, ii - 3] == currentPlayer)
                     {
                         return true;
                     }
