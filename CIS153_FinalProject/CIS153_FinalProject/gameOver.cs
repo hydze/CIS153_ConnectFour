@@ -45,7 +45,7 @@ namespace CIS153_FinalProject
             if (sForm.getGameWinner() == 1)
             {
                 gameWin = "RED";
-
+                lbl_winner.ForeColor = System.Drawing.Color.Red;
                 soundFile = Properties.Resources.cheering;
                 soundplayer = new SoundPlayer(soundFile);
                 playSound();
@@ -56,12 +56,13 @@ namespace CIS153_FinalProject
                 //always be an AI, but the assumption that player 2 sucks.
 
                 gameWin = "YELLOW";
+                lbl_winner.ForeColor = System.Drawing.Color.Yellow;
                 soundFile = Properties.Resources.boo;
                 soundplayer = new SoundPlayer(soundFile);
                 playSound();
             }
                
-            lbl_winner.Text = gameWin; //need to add sForm.setGameWinner(1|2); to winning logic to set this
+            lbl_winner.Text = gameWin; //sForm.setGameWinner(1|2);
 
             int[] statsArray = new int[4];
             statsArray = sF.returnStats();

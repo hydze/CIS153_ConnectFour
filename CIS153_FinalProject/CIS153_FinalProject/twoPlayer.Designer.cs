@@ -125,6 +125,8 @@ namespace CIS153_FinalProject
             this.yellow_42 = new System.Windows.Forms.PictureBox();
             this.yellow_turn = new System.Windows.Forms.PictureBox();
             this.red_turn = new System.Windows.Forms.PictureBox();
+            this.lbl_red_turn = new System.Windows.Forms.Label();
+            this.lbl_yellow_turn = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.red_8)).BeginInit();
@@ -1363,6 +1365,27 @@ namespace CIS153_FinalProject
             this.red_turn.TabIndex = 144;
             this.red_turn.TabStop = false;
             // 
+            // lbl_red_turn
+            // 
+            this.lbl_red_turn.AutoSize = true;
+            this.lbl_red_turn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_red_turn.Location = new System.Drawing.Point(27, 568);
+            this.lbl_red_turn.Name = "lbl_red_turn";
+            this.lbl_red_turn.Size = new System.Drawing.Size(29, 13);
+            this.lbl_red_turn.TabIndex = 145;
+            this.lbl_red_turn.Text = "Turn";
+            // 
+            // lbl_yellow_turn
+            // 
+            this.lbl_yellow_turn.AutoSize = true;
+            this.lbl_yellow_turn.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_yellow_turn.Location = new System.Drawing.Point(471, 568);
+            this.lbl_yellow_turn.Name = "lbl_yellow_turn";
+            this.lbl_yellow_turn.Size = new System.Drawing.Size(29, 13);
+            this.lbl_yellow_turn.TabIndex = 146;
+            this.lbl_yellow_turn.Text = "Turn";
+            this.lbl_yellow_turn.Visible = false;
+            // 
             // twoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1370,6 +1393,8 @@ namespace CIS153_FinalProject
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(536, 648);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_yellow_turn);
+            this.Controls.Add(this.lbl_red_turn);
             this.Controls.Add(this.red_turn);
             this.Controls.Add(this.yellow_turn);
             this.Controls.Add(this.yellow_42);
@@ -1659,5 +1684,7 @@ namespace CIS153_FinalProject
         private System.Windows.Forms.PictureBox yellow_42;
         private System.Windows.Forms.PictureBox yellow_turn;
         private System.Windows.Forms.PictureBox red_turn;
+        private System.Windows.Forms.Label lbl_red_turn;
+        private System.Windows.Forms.Label lbl_yellow_turn;
     }
 }

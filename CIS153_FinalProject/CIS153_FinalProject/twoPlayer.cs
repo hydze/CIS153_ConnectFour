@@ -88,14 +88,18 @@ namespace CIS153_FinalProject
                     var img = redCoins[imgPlace];
                     img.Visible = true;
                     red_turn.Visible = false;
+                    lbl_red_turn.Visible = false;
                     yellow_turn.Visible = true;
+                    lbl_yellow_turn.Visible = true;
                 }
                 if (TokenColor == Color.YELLOW)
                 {
                     var img = yellowCoins[imgPlace];
                     img.Visible = true;
                     yellow_turn.Visible = false;
+                    lbl_yellow_turn.Visible = false;
                     red_turn.Visible = true;
+                    lbl_red_turn.Visible = true;
                 }
 
             }

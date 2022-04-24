@@ -54,10 +54,9 @@ namespace CIS153_FinalProject
             // btn_review
             // 
             this.btn_review.Font = new System.Drawing.Font("Goudy Stout", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_review.Location = new System.Drawing.Point(95, 500);
-            this.btn_review.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_review.Location = new System.Drawing.Point(71, 406);
             this.btn_review.Name = "btn_review";
-            this.btn_review.Size = new System.Drawing.Size(476, 69);
+            this.btn_review.Size = new System.Drawing.Size(357, 56);
             this.btn_review.TabIndex = 5;
             this.btn_review.Text = "Review Game";
             this.btn_review.UseVisualStyleBackColor = true;
@@ -66,10 +65,9 @@ namespace CIS153_FinalProject
             // btn_exit
             // 
             this.btn_exit.Font = new System.Drawing.Font("Goudy Stout", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.Location = new System.Drawing.Point(95, 603);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_exit.Location = new System.Drawing.Point(71, 490);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(476, 69);
+            this.btn_exit.Size = new System.Drawing.Size(357, 56);
             this.btn_exit.TabIndex = 6;
             this.btn_exit.Text = "Exit";
             this.btn_exit.UseVisualStyleBackColor = true;
@@ -78,10 +76,9 @@ namespace CIS153_FinalProject
             // btn_playAgain
             // 
             this.btn_playAgain.Font = new System.Drawing.Font("Goudy Stout", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_playAgain.Location = new System.Drawing.Point(95, 399);
-            this.btn_playAgain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_playAgain.Location = new System.Drawing.Point(71, 324);
             this.btn_playAgain.Name = "btn_playAgain";
-            this.btn_playAgain.Size = new System.Drawing.Size(476, 69);
+            this.btn_playAgain.Size = new System.Drawing.Size(357, 56);
             this.btn_playAgain.TabIndex = 7;
             this.btn_playAgain.Text = "Play Again";
             this.btn_playAgain.UseVisualStyleBackColor = true;
@@ -92,10 +89,9 @@ namespace CIS153_FinalProject
             this.lbl_winner.AutoSize = true;
             this.lbl_winner.Font = new System.Drawing.Font("Goudy Stout", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_winner.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_winner.Location = new System.Drawing.Point(127, 79);
-            this.lbl_winner.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_winner.Location = new System.Drawing.Point(135, 59);
             this.lbl_winner.Name = "lbl_winner";
-            this.lbl_winner.Size = new System.Drawing.Size(378, 37);
+            this.lbl_winner.Size = new System.Drawing.Size(293, 28);
             this.lbl_winner.TabIndex = 8;
             this.lbl_winner.Text = "WINNER HERE";
             // 
@@ -104,10 +100,9 @@ namespace CIS153_FinalProject
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Goudy Stout", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(113, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(85, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 37);
+            this.label1.Size = new System.Drawing.Size(319, 28);
             this.label1.TabIndex = 9;
             this.label1.Text = "The Winner Is";
             // 
@@ -117,11 +112,10 @@ namespace CIS153_FinalProject
             this.txt_cPer.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_cPer.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cPer.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_cPer.Location = new System.Drawing.Point(413, 346);
-            this.txt_cPer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cPer.Location = new System.Drawing.Point(310, 281);
             this.txt_cPer.Name = "txt_cPer";
             this.txt_cPer.ReadOnly = true;
-            this.txt_cPer.Size = new System.Drawing.Size(132, 30);
+            this.txt_cPer.Size = new System.Drawing.Size(100, 25);
             this.txt_cPer.TabIndex = 35;
             this.txt_cPer.Text = "01";
             // 
@@ -131,11 +125,10 @@ namespace CIS153_FinalProject
             this.txt_cWins.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_cWins.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cWins.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_cWins.Location = new System.Drawing.Point(212, 346);
-            this.txt_cWins.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cWins.Location = new System.Drawing.Point(159, 281);
             this.txt_cWins.Name = "txt_cWins";
             this.txt_cWins.ReadOnly = true;
-            this.txt_cWins.Size = new System.Drawing.Size(132, 30);
+            this.txt_cWins.Size = new System.Drawing.Size(100, 25);
             this.txt_cWins.TabIndex = 34;
             this.txt_cWins.Text = "01";
             // 
@@ -145,11 +138,10 @@ namespace CIS153_FinalProject
             this.txt_pPer.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_pPer.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pPer.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_pPer.Location = new System.Drawing.Point(405, 283);
-            this.txt_pPer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_pPer.Location = new System.Drawing.Point(304, 230);
             this.txt_pPer.Name = "txt_pPer";
             this.txt_pPer.ReadOnly = true;
-            this.txt_pPer.Size = new System.Drawing.Size(132, 30);
+            this.txt_pPer.Size = new System.Drawing.Size(100, 25);
             this.txt_pPer.TabIndex = 33;
             this.txt_pPer.Text = "01";
             // 
@@ -159,11 +151,10 @@ namespace CIS153_FinalProject
             this.txt_pWins.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_pWins.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pWins.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_pWins.Location = new System.Drawing.Point(212, 284);
-            this.txt_pWins.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_pWins.Location = new System.Drawing.Point(159, 231);
             this.txt_pWins.Name = "txt_pWins";
             this.txt_pWins.ReadOnly = true;
-            this.txt_pWins.Size = new System.Drawing.Size(132, 30);
+            this.txt_pWins.Size = new System.Drawing.Size(100, 25);
             this.txt_pWins.TabIndex = 32;
             this.txt_pWins.Text = "01";
             // 
@@ -173,11 +164,10 @@ namespace CIS153_FinalProject
             this.txt_ties.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_ties.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ties.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_ties.Location = new System.Drawing.Point(355, 215);
-            this.txt_ties.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_ties.Location = new System.Drawing.Point(266, 175);
             this.txt_ties.Name = "txt_ties";
             this.txt_ties.ReadOnly = true;
-            this.txt_ties.Size = new System.Drawing.Size(132, 30);
+            this.txt_ties.Size = new System.Drawing.Size(100, 25);
             this.txt_ties.TabIndex = 31;
             this.txt_ties.Text = "01";
             // 
@@ -187,11 +177,10 @@ namespace CIS153_FinalProject
             this.txt_gamesPlayed.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_gamesPlayed.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_gamesPlayed.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_gamesPlayed.Location = new System.Drawing.Point(355, 172);
-            this.txt_gamesPlayed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_gamesPlayed.Location = new System.Drawing.Point(266, 140);
             this.txt_gamesPlayed.Name = "txt_gamesPlayed";
             this.txt_gamesPlayed.ReadOnly = true;
-            this.txt_gamesPlayed.Size = new System.Drawing.Size(132, 30);
+            this.txt_gamesPlayed.Size = new System.Drawing.Size(100, 25);
             this.txt_gamesPlayed.TabIndex = 30;
             this.txt_gamesPlayed.Text = "01";
             // 
@@ -200,10 +189,9 @@ namespace CIS153_FinalProject
             this.lbl_cPer.AutoSize = true;
             this.lbl_cPer.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cPer.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_cPer.Location = new System.Drawing.Point(353, 350);
-            this.lbl_cPer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_cPer.Location = new System.Drawing.Point(265, 284);
             this.lbl_cPer.Name = "lbl_cPer";
-            this.lbl_cPer.Size = new System.Drawing.Size(47, 27);
+            this.lbl_cPer.Size = new System.Drawing.Size(39, 22);
             this.lbl_cPer.TabIndex = 29;
             this.lbl_cPer.Text = "% :";
             // 
@@ -212,10 +200,9 @@ namespace CIS153_FinalProject
             this.lbl_pPer.AutoSize = true;
             this.lbl_pPer.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pPer.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_pPer.Location = new System.Drawing.Point(353, 284);
-            this.lbl_pPer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_pPer.Location = new System.Drawing.Point(265, 231);
             this.lbl_pPer.Name = "lbl_pPer";
-            this.lbl_pPer.Size = new System.Drawing.Size(47, 27);
+            this.lbl_pPer.Size = new System.Drawing.Size(39, 22);
             this.lbl_pPer.TabIndex = 28;
             this.lbl_pPer.Text = "% :";
             // 
@@ -224,10 +211,9 @@ namespace CIS153_FinalProject
             this.lbl_cWins.AutoSize = true;
             this.lbl_cWins.Font = new System.Drawing.Font("Goudy Stout", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cWins.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_cWins.Location = new System.Drawing.Point(83, 351);
-            this.lbl_cWins.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_cWins.Location = new System.Drawing.Point(62, 285);
             this.lbl_cWins.Name = "lbl_cWins";
-            this.lbl_cWins.Size = new System.Drawing.Size(122, 26);
+            this.lbl_cWins.Size = new System.Drawing.Size(95, 20);
             this.lbl_cWins.TabIndex = 27;
             this.lbl_cWins.Text = "Wins :";
             // 
@@ -236,10 +222,9 @@ namespace CIS153_FinalProject
             this.lbl_pWins.AutoSize = true;
             this.lbl_pWins.Font = new System.Drawing.Font("Goudy Stout", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pWins.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_pWins.Location = new System.Drawing.Point(89, 289);
-            this.lbl_pWins.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_pWins.Location = new System.Drawing.Point(67, 235);
             this.lbl_pWins.Name = "lbl_pWins";
-            this.lbl_pWins.Size = new System.Drawing.Size(122, 26);
+            this.lbl_pWins.Size = new System.Drawing.Size(95, 20);
             this.lbl_pWins.TabIndex = 26;
             this.lbl_pWins.Text = "Wins :";
             // 
@@ -248,10 +233,9 @@ namespace CIS153_FinalProject
             this.lbl_ties.AutoSize = true;
             this.lbl_ties.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ties.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_ties.Location = new System.Drawing.Point(237, 215);
-            this.lbl_ties.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_ties.Location = new System.Drawing.Point(178, 175);
             this.lbl_ties.Name = "lbl_ties";
-            this.lbl_ties.Size = new System.Drawing.Size(101, 23);
+            this.lbl_ties.Size = new System.Drawing.Size(78, 18);
             this.lbl_ties.TabIndex = 25;
             this.lbl_ties.Text = "Ties :";
             // 
@@ -260,10 +244,9 @@ namespace CIS153_FinalProject
             this.lbl_games.AutoSize = true;
             this.lbl_games.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_games.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_games.Location = new System.Drawing.Point(84, 180);
-            this.lbl_games.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_games.Location = new System.Drawing.Point(63, 146);
             this.lbl_games.Name = "lbl_games";
-            this.lbl_games.Size = new System.Drawing.Size(256, 23);
+            this.lbl_games.Size = new System.Drawing.Size(196, 18);
             this.lbl_games.TabIndex = 24;
             this.lbl_games.Text = "Games Played:";
             // 
@@ -272,22 +255,20 @@ namespace CIS153_FinalProject
             this.lbl_stats.AutoSize = true;
             this.lbl_stats.Font = new System.Drawing.Font("Goudy Stout", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_stats.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lbl_stats.Location = new System.Drawing.Point(235, 137);
-            this.lbl_stats.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_stats.Location = new System.Drawing.Point(26, 101);
             this.lbl_stats.Name = "lbl_stats";
-            this.lbl_stats.Size = new System.Drawing.Size(161, 32);
+            this.lbl_stats.Size = new System.Drawing.Size(429, 26);
             this.lbl_stats.TabIndex = 23;
-            this.lbl_stats.Text = "Stats";
+            this.lbl_stats.Text = "Single Player Stats";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(37, 324);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(28, 263);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(312, 23);
+            this.label2.Size = new System.Drawing.Size(244, 18);
             this.label2.TabIndex = 22;
             this.label2.Text = "Computer Stats:";
             // 
@@ -296,19 +277,18 @@ namespace CIS153_FinalProject
             this.lbl_playerWins.AutoSize = true;
             this.lbl_playerWins.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_playerWins.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lbl_playerWins.Location = new System.Drawing.Point(80, 255);
-            this.lbl_playerWins.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_playerWins.Location = new System.Drawing.Point(60, 207);
             this.lbl_playerWins.Name = "lbl_playerWins";
-            this.lbl_playerWins.Size = new System.Drawing.Size(263, 23);
+            this.lbl_playerWins.Size = new System.Drawing.Size(206, 18);
             this.lbl_playerWins.TabIndex = 21;
             this.lbl_playerWins.Text = "Player Stats:";
             // 
             // gameOver
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(665, 720);
+            this.ClientSize = new System.Drawing.Size(499, 585);
             this.ControlBox = false;
             this.Controls.Add(this.txt_cPer);
             this.Controls.Add(this.txt_cWins);
@@ -330,7 +310,6 @@ namespace CIS153_FinalProject
             this.Controls.Add(this.btn_playAgain);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_review);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "gameOver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game Over";
