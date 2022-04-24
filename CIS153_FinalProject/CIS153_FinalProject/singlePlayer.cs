@@ -23,6 +23,16 @@ namespace CIS153_FinalProject
         Stream soundFile;
         SoundPlayer soundplayer;
 
+        //due to nature of board size, should only ever need to block vertical win once per game
+        private bool colBlock0 = false;
+        private bool colBlock1 = false;
+        private bool colBlock2 = false;
+        private bool colBlock3 = false;
+        private bool colBlock4 = false;
+        private bool colBlock5 = false;
+        private bool colBlock6 = false;
+
+
         public singlePlayer()
         {
             InitializeComponent();
@@ -39,6 +49,8 @@ namespace CIS153_FinalProject
 
             sForm.setGameType(1); //set single player game type for replay
             sForm.updateStats('g'); // a new game was started
+
+
 
             board = new Board();
             redCoins = new List<PictureBox>();
@@ -174,13 +186,15 @@ namespace CIS153_FinalProject
 
         private void buttonLeave(int col)
         {
-            int row = 5 - board.insertCoinHover(col);
-            var imgPlace = col + row * 7;
-            var img = redCoins[imgPlace];
-            img.Visible = false;
-            var img2 = yellowCoins[imgPlace];
-            img2.Visible = false;
-
+            if (board.canPlaceCoin(col) == true)
+            {
+                int row = 5 - board.insertCoinHover(col);
+                var imgPlace = col + row * 7;
+                var img = redCoins[imgPlace];
+                img.Visible = false;
+                var img2 = yellowCoins[imgPlace];
+                img2.Visible = false;
+            }
         }
 
 
@@ -198,17 +212,102 @@ namespace CIS153_FinalProject
             btn_drop6.Enabled = false;
             btn_drop7.Enabled = false;
 
-            
+            //Thread.Sleep(5000);
             int column = 8; //this will intentionally break stuff if a different move isnt selected below before buttonClick(column);
 
-            
-
-            if( 1 == 1) //FIGURE OUT WHAT MOVES TO MAKE AND SET column TO BEST MOVE
+            //if (board.takeWinHorizontal() != 99)
+            //{
+            //    column = board.takeWinHorizontal();
+            //}
+            if (board.blockVertical() !=99) //block opponents vertical wins once each column a game if needed
             {
-                column = 1;
+                if(board.blockVertical() == 0)
+                {
+                    if(colBlock0 == false)
+                    {
+                        colBlock0 = true;
+                        column = board.blockVertical();
+                    }                  
+                }
+
+                if (board.blockVertical() == 1)
+                {
+                    if (colBlock1 == false)
+                    {
+                        colBlock1 = true;
+                        column = board.blockVertical();
+                    }
+                }
+
+                if (board.blockVertical() == 2)
+                {
+                    if (colBlock2 == false)
+                    {
+                        colBlock2 = true;
+                        column = board.blockVertical();
+                    }
+                }
+
+                if (board.blockVertical() == 3)
+                {
+                    if (colBlock3 == false)
+                    {
+                        colBlock3 = true;
+                        column = board.blockVertical();
+                    }
+                }
+
+                if (board.blockVertical() == 4)
+                {
+                    if (colBlock4 == false)
+                    {
+                        colBlock4 = true;
+                        column = board.blockVertical();
+                    }
+                }
+
+                if (board.blockVertical() == 5)
+                {
+                    if (colBlock5 == false)
+                    {
+                        colBlock5 = true;
+                        column = board.blockVertical();
+                    }
+                }
+
+                if (board.blockVertical() == 6)
+                {
+                    if (colBlock6 == false)
+                    {
+                        colBlock6 = true;
+                        column = board.blockVertical();
+                    }
+                }
+
+
+
+
+            }
+            else
+            {
+                //Middle collumn is KING, and essential to most wins, its block non vertical wins, we want to hold this
+                if (board.canPlaceCoin(3)) //take and hold middle row 
+                {
+                    column = 3;
+                }  
+
             }
 
-
+            if(column == 8) //if nothing else makes sense, pick a random column thats open
+            {
+                Random diceRoll = new Random();
+                int tryColumn = diceRoll.Next(0, 6);
+                while (board.canPlaceCoin(tryColumn) == false)
+                {
+                    tryColumn = diceRoll.Next(0, 6);
+                }
+                column = tryColumn;
+            }
             
             ////Make move column 0-6 
             buttonClick(column);

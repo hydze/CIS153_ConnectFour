@@ -157,12 +157,15 @@ namespace CIS153_FinalProject
 
         private void buttonLeave(int col)
         {
-            int row = 5 - board.insertCoinHover(col);
-            var imgPlace = col + row * 7;
-            var img = redCoins[imgPlace];
-            img.Visible = false;
-            var img2 = yellowCoins[imgPlace];
-            img2.Visible = false;
+            if (board.canPlaceCoin(col) == true)
+            {
+                int row = 5 - board.insertCoinHover(col);
+                var imgPlace = col + row * 7;
+                var img = redCoins[imgPlace];
+                img.Visible = false;
+                var img2 = yellowCoins[imgPlace];
+                img2.Visible = false;
+            }
 
         }
 

@@ -24,6 +24,7 @@ namespace CIS153_FinalProject
         private int gameType = 0; //1 = single player - 2 = double player - for replay on game over page
         private int gameWinner = 0; //1 = red player - 2 = yellow player - for game over page
 
+
         public Form1()
         {
             InitializeComponent();

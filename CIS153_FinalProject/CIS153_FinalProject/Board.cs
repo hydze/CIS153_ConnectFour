@@ -124,7 +124,13 @@ namespace CIS153_FinalProject
 
         public bool canPlaceCoin(int c)
         {
-            return gameBoard[0, c] == Color.NONE;
+            Console.WriteLine(c.ToString());
+
+            if(gameBoard[0, c] == Color.NONE)
+            {
+                return true;
+            }
+            return false;
         }
 
         public int insertCoin(int c)
@@ -177,6 +183,47 @@ namespace CIS153_FinalProject
         {
             return moves;
         }
+
+
+        public int takeWinHorizontal() //idealy this should return an int of the column to insert at
+        {
+            for (int i = 0; i < row; i++)
+            {
+                for (int ii = 0; ii < column - 3; ii++)
+                {
+                    if (gameBoard[i, ii] == Color.YELLOW && gameBoard[i, ii + 1] == Color.YELLOW && gameBoard[i, ii + 2] == Color.YELLOW)
+                    {
+                        return ii + 3;
+                    }
+                }
+            }
+            return 99;
+        }
+
+        public int blockVertical() //return 
+        {
+            for (int col = 0; col <= 6; col++)
+            {
+                //3,0
+                //4,0
+                //5,0
+                //Console.WriteLine(col.ToString());
+
+                for (int row = 5; row >= 0; row--)
+                {
+                    //Console.WriteLine(row.ToString());
+
+                    if (gameBoard[row, col] == Color.RED && gameBoard[row - 1, col] == Color.RED && gameBoard[row - 2, col] == Color.RED)
+                    {
+                        //due to the nature of board structure, you only ever need to block once as there are not enough spots to try again
+                        
+                        return col;
+                    }
+                }
+            }
+            return 99;
+        }
+
 
     }
 }
