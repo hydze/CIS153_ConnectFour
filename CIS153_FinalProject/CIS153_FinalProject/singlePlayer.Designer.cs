@@ -1374,6 +1374,7 @@ namespace CIS153_FinalProject
             this.lbl_yellow_turn.Size = new System.Drawing.Size(29, 13);
             this.lbl_yellow_turn.TabIndex = 148;
             this.lbl_yellow_turn.Text = "Turn";
+            this.lbl_yellow_turn.Visible = false;
             // 
             // lbl_red_turn
             // 

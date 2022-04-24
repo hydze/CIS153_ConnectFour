@@ -141,12 +141,12 @@ namespace CIS153_FinalProject
             }
             else //bot was taking another turn after player win, didnt stop win, but showed up on review form
             {
+
                 if (board.getLastPlayer() == Color.RED)
                 {
-                    Thread.Sleep(5000);
                     botTurn();
-
                 }
+
             }
         }
 
