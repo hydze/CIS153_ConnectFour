@@ -91,8 +91,48 @@ namespace CIS153_FinalProject
 
             try //make sure we can open the file
             {
-                content = CIS153_FinalProject.Properties.Resources.stats;
+                StreamReader file = new StreamReader("../../Resources/stats.txt");
                 Console.WriteLine("File Open");
+                content = file.ReadLine();
+                file.Close();
+
+                String[] fields = content.Split(',');
+
+                int count = 0;
+
+                //if you happen to see all 99's or 2's on the stats page, something is wrong
+                int games = 99;
+                int ties = 99;
+                int pWins = 99;
+                int cWins = 99;
+
+                foreach (String field in fields)
+                {
+                    if (count == 0)
+                    {
+                        games = Int32.Parse(field);
+                        count++;
+                    }
+                    else if (count == 1)
+                    {
+                        ties = Int32.Parse(field);
+                        count++;
+                    }
+                    else if (count == 2)
+                    {
+                        pWins = Int32.Parse(field);
+                        count++;
+                    }
+                    else if (count == 3)
+                    {
+                        cWins = Int32.Parse(field);
+                        count++;
+                    }
+                    statsArray[0] = games;
+                    statsArray[1] = ties;
+                    statsArray[2] = pWins;
+                    statsArray[3] = cWins;
+                }
 
             }
             catch (Exception e)
@@ -100,43 +140,7 @@ namespace CIS153_FinalProject
                 Console.WriteLine("We cannot open File: " + e.Message);
             }
 
-            String[] fields = content.Split(',');
-
-            int count = 0;
-
-            //if you happen to see all 99's or 2's on the stats page, something is probably wrong
-            int games = 99;
-            int ties = 99;
-            int pWins = 99;
-            int cWins = 99;
-
-            foreach (String field in fields)
-            {
-                if (count == 0)
-                {
-                    games = Int32.Parse(field);
-                    count++;
-                }
-                else if (count == 1)
-                {
-                    ties = Int32.Parse(field);
-                    count++;
-                }
-                else if (count == 2)
-                {
-                    pWins = Int32.Parse(field);
-                    count++;
-                }
-                else if (count == 3)
-                {
-                    cWins = Int32.Parse(field);
-                    count++;
-                }
-                statsArray[0] = games;
-                statsArray[1] = ties;
-                statsArray[2] = pWins;
-                statsArray[3] = cWins;
-            }
+          
         } //read persistent stats.txt file
 
         public int[] returnStats() //returns stats array for use on other forms
