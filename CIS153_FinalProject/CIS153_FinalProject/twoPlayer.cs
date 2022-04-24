@@ -105,15 +105,22 @@ namespace CIS153_FinalProject
             }
             if (board.isFinished())
             {
-                if(board.getLastPlayer() == Color.RED)
+                if (board.getMoves() == 42)
                 {
-                    sForm.setGameWinner(1);
+                    sForm.updateStats('t'); //we had a tie 
                 }
-                if (board.getLastPlayer() == Color.YELLOW)
+                else
                 {
-                    sForm.setGameWinner(2);
+                    if (board.getLastPlayer() == Color.RED)
+                    {
+                        sForm.setGameWinner(1);
+                    }
+                    if (board.getLastPlayer() == Color.YELLOW)
+                    {
+                        sForm.setGameWinner(2);
+                    }
                 }
-                //we still need to set a winner and a game type of single/multi to pass to next form, unless we want to get it from the board info once we load the next screen somehow
+                
                 sForm.setLastBoard(board); //save board state
                 this.Close();
                 gameOver formToLoad = new gameOver(sForm); //pass it the start form since we keep info there to pass around

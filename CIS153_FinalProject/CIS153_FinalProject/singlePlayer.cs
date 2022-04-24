@@ -109,22 +109,25 @@ namespace CIS153_FinalProject
             }
             if (board.isFinished())
             {
-                if (board.getLastPlayer() == Color.RED)
+                if (board.getMoves() == 42) //tie
                 {
-                    sForm.updateStats('p'); //player win
-                    sForm.setGameWinner(1);
+                    sForm.updateStats('t'); 
                 }
-                if (board.getLastPlayer() == Color.YELLOW)
+                else //someone won
                 {
-                    sForm.updateStats('c'); //computer win
-                    sForm.setGameWinner(2);
-                }
-                if (board.getMoves() == 42)
-                {
-                    sForm.updateStats('t'); //tie condition?
+                    if (board.getLastPlayer() == Color.RED)
+                    {
+                        sForm.updateStats('p'); //player win
+                        sForm.setGameWinner(1);
+                    }
+                    if (board.getLastPlayer() == Color.YELLOW)
+                    {
+                        sForm.updateStats('c'); //computer win
+                        sForm.setGameWinner(2);
+                    }
                 }
 
-                //we still need to set a winner and a game type of single/multi to pass to next form, unless we want to get it from the board info once we load the next screen somehow
+
                 sForm.setLastBoard(board); //save board state
                 this.Close();
                 gameOver formToLoad = new gameOver(sForm); //pass it the start form since we keep info there to pass around
@@ -191,7 +194,7 @@ namespace CIS153_FinalProject
             btn_drop7.Enabled = false;
 
             
-            int column = 8; //this will break stuff if a different move isnt selected below before buttonClick(column);
+            int column = 8; //this will intentionally break stuff if a different move isnt selected below before buttonClick(column);
 
             
 
