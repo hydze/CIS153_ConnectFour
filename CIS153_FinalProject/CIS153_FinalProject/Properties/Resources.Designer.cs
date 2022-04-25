@@ -71,6 +71,16 @@ namespace CIS153_FinalProject.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arcade {
+            get {
+                object obj = ResourceManager.GetObject("arcade", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream boing_poing {
@@ -228,11 +238,12 @@ namespace CIS153_FinalProject.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0,0,0,0,.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string stats {
+        internal static System.Drawing.Bitmap stats {
             get {
-                return ResourceManager.GetString("stats", resourceCulture);
+                object obj = ResourceManager.GetObject("stats", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

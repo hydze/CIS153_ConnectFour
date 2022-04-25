@@ -95,6 +95,7 @@ namespace CIS153_FinalProject
             // lbl_stats
             // 
             this.lbl_stats.AutoSize = true;
+            this.lbl_stats.BackColor = System.Drawing.SystemColors.WindowText;
             this.lbl_stats.Font = new System.Drawing.Font("Goudy Stout", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_stats.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lbl_stats.Location = new System.Drawing.Point(166, 30);
@@ -252,6 +253,8 @@ namespace CIS153_FinalProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
+            this.BackgroundImage = global::CIS153_FinalProject.Properties.Resources.stats;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(499, 585);
             this.ControlBox = false;
             this.Controls.Add(this.txt_cPer);
