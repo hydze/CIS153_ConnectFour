@@ -1,4 +1,11 @@
-﻿using System;
+﻿//==============================================================================================
+// Name: Group 4 - Chris Jarvis, Jesse Perry, Gabe Molnar
+// Date: 4/24/2022
+// Desc: Connect four program with single and double player modes, game review, and statistic
+//==============================================================================================
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
