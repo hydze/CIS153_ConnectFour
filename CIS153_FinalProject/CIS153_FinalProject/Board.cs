@@ -110,7 +110,7 @@ namespace CIS153_FinalProject
                 {
                     for (int ii = 0; ii < column - 3; ii++)
                     {
-                        if (gameBoard[i, ii] == currentPlayer && gameBoard[i + 1, ii - 1] == currentPlayer && gameBoard[i + 2, ii - 2] == currentPlayer && gameBoard[i + 3, ii - 3] == currentPlayer)
+                        if (gameBoard[i, ii] == lastPlayer && gameBoard[i + 1, ii - 1] == lastPlayer && gameBoard[i + 2, ii - 2] == lastPlayer && gameBoard[i + 3, ii - 3] == lastPlayer)
                         {
                             return true;
                         }
@@ -226,7 +226,7 @@ namespace CIS153_FinalProject
             return 99;
         }
 
-        public int blockHorizontalBase() //favor center in overall strategy, if red has center take a spot on side to hold base level
+        public int blockHorizontalBase() //favor center in overall strategy, if red takes center we gotta lock out row 
         {
             if(gameBoard[5,3] == Color.RED && moves == 1)
             {
@@ -237,11 +237,11 @@ namespace CIS153_FinalProject
             }
             if (gameBoard[5,3] == Color.RED && moves > 1)
             {
-                if (canPlaceCoin(2))
+                if (canPlaceCoin(2) && gameBoard[5,2] == Color.NONE)
                 {
                     return 2;
                 }
-                else if(canPlaceCoin(1))
+                else if(canPlaceCoin(1) && gameBoard[5,1] == Color.NONE)
                 {
                     return 1;
                 }

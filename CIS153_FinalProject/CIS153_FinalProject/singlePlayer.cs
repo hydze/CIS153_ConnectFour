@@ -219,6 +219,38 @@ namespace CIS153_FinalProject
             //Thread.Sleep(5000);
             int column = 3; //Column 3 is the default hotness since it mostly locks the board out
 
+            if (board.blockHorizontalBase() != 99 && hotMove == false) // attempt to lock opponent out of base row
+            {
+                if (board.blockHorizontalBase() == 4)
+                {
+                    if (rowBlock4 == false)
+                    {
+                        rowBlock4 = true;
+                        hotMove = true;
+                        column = board.blockHorizontalBase();
+                    }
+                }
+
+                if (board.blockHorizontalBase() == 2)
+                {
+                    if (rowBlock2 == false)
+                    {
+                        rowBlock2 = true;
+                        hotMove = true;
+                        column = board.blockHorizontalBase();
+                    }
+                }
+
+                if (board.blockHorizontalBase() == 1)
+                {
+                    if (rowBlock1 == false)
+                    {
+                        rowBlock1 = true;
+                        hotMove = true;
+                        column = board.blockHorizontalBase();
+                    }
+                }
+            }
             if (board.blockVertical() != 99 && hotMove == false) //block opponents vertical wins once each column a game if needed
             {
                 if (board.blockVertical() == 0)
@@ -302,40 +334,6 @@ namespace CIS153_FinalProject
                 hotMove = true;
             }
 
-
-
-            if (board.blockHorizontalBase() != 99 && hotMove == false) // attempt to lock opponent out of base row
-            {
-                if (board.blockHorizontalBase() == 4)
-                {
-                    if (rowBlock4 == false)
-                    {
-                        rowBlock4 = true;
-                        hotMove = true;
-                        column = board.blockHorizontalBase();
-                    }
-                }
-
-                if (board.blockHorizontalBase() == 2)
-                {
-                    if (rowBlock2 == false)
-                    {
-                        rowBlock2 = true;
-                        hotMove = true;
-                        column = board.blockHorizontalBase();
-                    }
-                }
-
-                if (board.blockHorizontalBase() == 1)
-                {
-                    if (rowBlock1 == false)
-                    {
-                        rowBlock1 = true;
-                        hotMove = true;
-                        column = board.blockHorizontalBase();
-                    }
-                }
-            }
             else
             {
                 //Middle collumn is KING, and essential to most wins, its block non vertical wins, we want to hold this by default
