@@ -56,7 +56,7 @@ namespace CIS153_FinalProject
             //game stuff goes here
 
             sForm.setGameType(1); //set single player game type for replay
-            sForm.updateStats('g'); // a new game was started
+            
 
 
 
@@ -125,17 +125,20 @@ namespace CIS153_FinalProject
             {
                 if (board.getMoves() == 42) //tie
                 {
+                    sForm.updateStats('g'); // a game was player
                     sForm.updateStats('t'); 
                 }
                 else //someone won
                 {
                     if (board.getLastPlayer() == Color.RED)
                     {
+                        sForm.updateStats('g'); // a game was player
                         sForm.updateStats('p'); //player win
                         sForm.setGameWinner(1);
                     }
                     if (board.getLastPlayer() == Color.YELLOW)
                     {
+                        sForm.updateStats('g'); // a game was player
                         sForm.updateStats('c'); //computer win
                         sForm.setGameWinner(2);
                     }
