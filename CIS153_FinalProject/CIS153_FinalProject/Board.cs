@@ -105,7 +105,6 @@ namespace CIS153_FinalProject
                 }
 
                 // Check bottom left to top right
-                // TODO -- FIX WHEN DESIGN IS CREATED
                 for (int i = 0; i < row - 3; i++)
                 {
                     for (int ii = 0; ii < column - 3; ii++)
@@ -195,7 +194,7 @@ namespace CIS153_FinalProject
 
 
 
-        /// stuff for 'AI' 6 basic rules + more logic in botTurn
+        /// stuff for 'AI' 6 basic rules that return a column to place a token / Logic also in bot function in SP form to try to take middle row
         public int takeHorizontalWin() 
         {
             for (int i = 0; i < row; i++)

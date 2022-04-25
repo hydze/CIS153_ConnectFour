@@ -221,33 +221,36 @@ namespace CIS153_FinalProject
 
             if (board.blockHorizontalBase() != 99 && hotMove == false) // attempt to lock opponent out of base row
             {
-                if (board.blockHorizontalBase() == 4)
+                if (board.getMoves() < 4)
                 {
-                    if (rowBlock4 == false)
+                    if (board.blockHorizontalBase() == 4)
                     {
-                        rowBlock4 = true;
-                        hotMove = true;
-                        column = board.blockHorizontalBase();
+                        if (rowBlock4 == false)
+                        {
+                            rowBlock4 = true;
+                            hotMove = true;
+                            column = board.blockHorizontalBase();
+                        }
                     }
-                }
 
-                if (board.blockHorizontalBase() == 2)
-                {
-                    if (rowBlock2 == false)
+                    if (board.blockHorizontalBase() == 2)
                     {
-                        rowBlock2 = true;
-                        hotMove = true;
-                        column = board.blockHorizontalBase();
+                        if (rowBlock2 == false)
+                        {
+                            rowBlock2 = true;
+                            hotMove = true;
+                            column = board.blockHorizontalBase();
+                        }
                     }
-                }
 
-                if (board.blockHorizontalBase() == 1)
-                {
-                    if (rowBlock1 == false)
+                    if (board.blockHorizontalBase() == 1)
                     {
-                        rowBlock1 = true;
-                        hotMove = true;
-                        column = board.blockHorizontalBase();
+                        if (rowBlock1 == false)
+                        {
+                            rowBlock1 = true;
+                            hotMove = true;
+                            column = board.blockHorizontalBase();
+                        }
                     }
                 }
             }
