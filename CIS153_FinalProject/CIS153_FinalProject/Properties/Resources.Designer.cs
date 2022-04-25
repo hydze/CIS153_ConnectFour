@@ -116,6 +116,16 @@ namespace CIS153_FinalProject.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_image {
+            get {
+                object obj = ResourceManager.GetObject("button_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream can_pop {
@@ -182,7 +192,7 @@ namespace CIS153_FinalProject.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 5,0,4,1,.
+        ///   Looks up a localized string similar to 0,0,0,0,.
         /// </summary>
         internal static string stats {
             get {

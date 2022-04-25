@@ -757,6 +757,7 @@ namespace CIS153_FinalProject
             // btn_drop1
             // 
             this.btn_drop1.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drop1.Image = global::CIS153_FinalProject.Properties.Resources.button_image;
             this.btn_drop1.Location = new System.Drawing.Point(27, 452);
             this.btn_drop1.Name = "btn_drop1";
             this.btn_drop1.Size = new System.Drawing.Size(61, 35);
@@ -769,6 +770,7 @@ namespace CIS153_FinalProject
             // btn_drop2
             // 
             this.btn_drop2.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drop2.Image = global::CIS153_FinalProject.Properties.Resources.button_image;
             this.btn_drop2.Location = new System.Drawing.Point(97, 452);
             this.btn_drop2.Name = "btn_drop2";
             this.btn_drop2.Size = new System.Drawing.Size(61, 35);
@@ -781,6 +783,7 @@ namespace CIS153_FinalProject
             // btn_drop3
             // 
             this.btn_drop3.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drop3.Image = global::CIS153_FinalProject.Properties.Resources.button_image;
             this.btn_drop3.Location = new System.Drawing.Point(166, 452);
             this.btn_drop3.Name = "btn_drop3";
             this.btn_drop3.Size = new System.Drawing.Size(61, 35);
@@ -793,6 +796,7 @@ namespace CIS153_FinalProject
             // btn_drop6
             // 
             this.btn_drop6.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drop6.Image = global::CIS153_FinalProject.Properties.Resources.button_image;
             this.btn_drop6.Location = new System.Drawing.Point(374, 453);
             this.btn_drop6.Name = "btn_drop6";
             this.btn_drop6.Size = new System.Drawing.Size(61, 35);
@@ -805,6 +809,7 @@ namespace CIS153_FinalProject
             // btn_drop5
             // 
             this.btn_drop5.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drop5.Image = global::CIS153_FinalProject.Properties.Resources.button_image;
             this.btn_drop5.Location = new System.Drawing.Point(303, 453);
             this.btn_drop5.Name = "btn_drop5";
             this.btn_drop5.Size = new System.Drawing.Size(61, 35);
@@ -817,6 +822,7 @@ namespace CIS153_FinalProject
             // btn_drop4
             // 
             this.btn_drop4.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drop4.Image = global::CIS153_FinalProject.Properties.Resources.button_image;
             this.btn_drop4.Location = new System.Drawing.Point(234, 453);
             this.btn_drop4.Name = "btn_drop4";
             this.btn_drop4.Size = new System.Drawing.Size(61, 35);
@@ -829,6 +835,7 @@ namespace CIS153_FinalProject
             // btn_drop7
             // 
             this.btn_drop7.Font = new System.Drawing.Font("Goudy Stout", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drop7.Image = global::CIS153_FinalProject.Properties.Resources.button_image;
             this.btn_drop7.Location = new System.Drawing.Point(446, 452);
             this.btn_drop7.Name = "btn_drop7";
             this.btn_drop7.Size = new System.Drawing.Size(61, 35);

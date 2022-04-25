@@ -175,5 +175,8 @@
   <ItemGroup>
     <None Include="Resources\boing_spring.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_image.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
