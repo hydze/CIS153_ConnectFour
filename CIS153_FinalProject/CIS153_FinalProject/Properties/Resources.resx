@@ -166,4 +166,16 @@
   <data name="button_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Connect_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Connect 4 .wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="explosion_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explosion_x.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Man_vs__Machine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Man vs. Machine.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Man_vs__Man" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Man vs. Man.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -31,7 +31,7 @@ namespace CIS153_FinalProject
 
             readStats(); //read file when program starts
 
-            soundFile = Properties.Resources.boing3;
+            soundFile = Properties.Resources.Connect_4;
             soundplayer = new SoundPlayer(soundFile);
             playSound();
         }
@@ -222,6 +222,34 @@ namespace CIS153_FinalProject
         private void playSound()
         {
             soundplayer.Play();
+        }
+
+        private void btn_single_mousehover(object sender, EventArgs e)
+        {
+            lbl_singleInfo.Visible = true;
+
+            soundFile = Properties.Resources.Man_vs__Machine;
+            soundplayer = new SoundPlayer(soundFile);
+            playSound();
+        }
+
+        private void btn_double_mousehover(object sender, EventArgs e)
+        {
+            lbl_doubleInfo.Visible = true;
+
+            soundFile = Properties.Resources.Man_vs__Man;
+            soundplayer = new SoundPlayer(soundFile);
+            playSound();
+        }
+
+        private void btn_single_mouseleave(object sender, EventArgs e)
+        {
+            lbl_singleInfo.Visible = false;
+        }
+
+        private void btn_double_mouseleave(object sender, EventArgs e)
+        {
+            lbl_doubleInfo.Visible = false;
         }
     }
 }

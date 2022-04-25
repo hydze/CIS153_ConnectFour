@@ -178,5 +178,17 @@
   <ItemGroup>
     <None Include="Resources\button_image.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connect 4 .wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man vs. Man.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man vs. Machine.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion_x.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
